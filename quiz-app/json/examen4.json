@@ -1,8 +1,8 @@
 {
     "examen": {
-        "id": "quiz-003",
-        "titulo": "Selección de algoritmos y proceso de aprendizaje automático",
-        "descripcion": "Evaluación sobre selección de algoritmos, preprocesamiento, entrenamiento, optimización y despliegue en machine learning.",
+        "id": "quiz-004",
+        "titulo": "Sistemas de Aprendizaje Automático",
+        "descripcion": "Examen tipo test sobre selección de modelos, preprocesamiento de datos, métricas, entrenamiento y despliegue en machine learning.",
         "configuracion": {
             "tiempo_limite_minutos": 30,
             "puntuacion_minima_aprobado": 70,
@@ -13,20 +13,20 @@
             {
                 "id": 1,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué se debe evaluar primero al plantear un problema de ML?",
+                "enunciado": "¿Qué se debe evaluar primero antes de aplicar IA a un problema?",
                 "imagen_url": null,
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "Si existe suficiente hardware"
+                        "texto": "Si existe GPU disponible"
                     },
                     {
                         "id": "b",
-                        "texto": "Si se puede resolver sin IA"
+                        "texto": "Si puede resolverse sin IA"
                     },
                     {
                         "id": "c",
-                        "texto": "El tipo de gráfico a usar"
+                        "texto": "El tamaño del modelo"
                     },
                     {
                         "id": "d",
@@ -34,112 +34,537 @@
                     }
                 ],
                 "respuesta_correcta": "b",
-                "explicacion": "Antes de usar IA se debe comprobar si el problema puede resolverse con métodos más simples."
+                "explicacion": "Siempre se debe evaluar si el problema puede resolverse con métodos más simples."
             },
             {
                 "id": 2,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué caracteriza al aprendizaje supervisado?",
+                "enunciado": "¿Qué caracteriza un problema supervisado?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "No tiene datos etiquetados"
+                        "texto": "No tiene datos"
                     },
                     {
                         "id": "b",
-                        "texto": "Busca patrones sin etiquetas"
+                        "texto": "Tiene etiquetas asociadas a los datos"
                     },
                     {
                         "id": "c",
-                        "texto": "Existe relación entre datos y etiquetas"
+                        "texto": "No requiere entrenamiento"
                     },
                     {
                         "id": "d",
-                        "texto": "Solo usa datos de texto"
+                        "texto": "Solo usa imágenes"
                     }
                 ],
-                "respuesta_correcta": "c",
-                "explicacion": "El aprendizaje supervisado se basa en datos con etiquetas."
+                "respuesta_correcta": "b",
+                "explicacion": "El aprendizaje supervisado requiere datos con etiquetas."
             },
             {
                 "id": 3,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué analiza el EDA?",
+                "enunciado": "¿Qué se busca en el aprendizaje no supervisado?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "El código del modelo"
+                        "texto": "Etiquetas exactas"
                     },
                     {
                         "id": "b",
-                        "texto": "Las métricas finales"
+                        "texto": "Patrones en los datos"
                     },
                     {
                         "id": "c",
-                        "texto": "La estructura y relaciones de los datos"
+                        "texto": "Errores de código"
                     },
                     {
                         "id": "d",
-                        "texto": "El hardware disponible"
+                        "texto": "Optimizar hardware"
                     }
                 ],
-                "respuesta_correcta": "c",
-                "explicacion": "El análisis exploratorio examina datos y relaciones."
+                "respuesta_correcta": "b",
+                "explicacion": "El objetivo es descubrir estructuras o patrones sin etiquetas."
             },
             {
                 "id": 4,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué tipo de datos no estructurados existe?",
+                "enunciado": "¿Qué porcentaje del éxito de un modelo depende de los datos?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "Tablas SQL"
+                        "texto": "20%"
                     },
                     {
                         "id": "b",
-                        "texto": "CSV"
+                        "texto": "50%"
                     },
                     {
                         "id": "c",
-                        "texto": "Imágenes"
+                        "texto": "80% o más"
                     },
                     {
                         "id": "d",
-                        "texto": "Excel"
+                        "texto": "100%"
                     }
                 ],
                 "respuesta_correcta": "c",
-                "explicacion": "Las imágenes son datos no estructurados."
+                "explicacion": "El preprocesamiento de datos es clave en el rendimiento del modelo."
             },
             {
                 "id": 5,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué indica un dataset desbalanceado?",
+                "enunciado": "¿Qué significa ETL?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "Todas las clases tienen igual frecuencia"
+                        "texto": "Entrenar, Testear, Lanzar"
                     },
                     {
                         "id": "b",
-                        "texto": "Una clase domina sobre otras"
+                        "texto": "Extraer, Transformar, Cargar"
                     },
                     {
                         "id": "c",
-                        "texto": "No hay datos faltantes"
+                        "texto": "Evaluar, Testear, Limpiar"
                     },
                     {
                         "id": "d",
-                        "texto": "Datos lineales"
+                        "texto": "Ejecutar, Transformar, Leer"
                     }
                 ],
                 "respuesta_correcta": "b",
-                "explicacion": "El desbalance implica desigual distribución de clases."
+                "explicacion": "ETL es el proceso de extracción, transformación y carga de datos."
             },
             {
                 "id": 6,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué porcentaje suele usarse para training?",
+                "enunciado": "¿Qué representa la 'diversidad' en la calidad de datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Cantidad de datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Variabilidad del problema"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Velocidad de procesamiento"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Número de modelos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La diversidad mide si los datos representan diferentes casos del problema."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es la completitud de datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Que los datos estén duplicados"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Que no haya valores faltantes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Que los datos sean rápidos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Que los datos sean grandes"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Se refiere a la ausencia de valores faltantes."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué estrategia se usa si hay pocos valores faltantes?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Duplicarlos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Eliminarlos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aumentarlos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ignorarlos siempre"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Si son pocos, se pueden eliminar sin afectar al modelo."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica sirve para detectar outliers?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Boxplot"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pie chart"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Tabla"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Texto"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "El boxplot muestra claramente outliers."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico usarías para ver distribución de edades?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Histograma"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pie chart"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Scatter"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Line plot"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "El histograma muestra distribuciones."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico es mejor para series temporales?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Line plot"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pie"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Box"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Scatter"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Las líneas muestran evolución en el tiempo."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el min-max scaling?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Reduce dimensiones"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Convierte datos al rango 0-1"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Elimina outliers"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Duplica datos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Escala los datos entre 0 y 1."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema tiene el min-max scaling?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Es lento"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Sensible a outliers"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "No funciona con números"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Elimina datos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Los outliers afectan mucho al rango."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica es menos sensible a outliers?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Min-max"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Robust scaling"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Label encoding"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "One-hot"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Usa mediana e IQR."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el Z-score?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Convierte a media 0 y desviación 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Elimina datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Reduce dimensiones"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ordena datos"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Normaliza datos con distribución estándar."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica reduce asimetría?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Log normalization"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "One-hot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Shuffle"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Split"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "El log reduce la asimetría."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué tipo de variable es 'país'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Numérica"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Categórica"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Temporal"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Booleana"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Representa categorías."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el one-hot encoding?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Asigna números enteros"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Crea columnas binarias"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Elimina columnas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ordena datos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Una columna por categoría."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema puede tener label encoding?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pierde datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Introduce orden artificial"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aumenta dimensiones"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "No funciona"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Puede crear relaciones inexistentes."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el target encoding?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Elimina etiquetas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Sustituye por media del objetivo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Duplica datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Reduce filas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Usa la media de la variable objetivo."
+            },
+            {
+                "id": 21,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es feature engineering?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Crear nuevas variables"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Entrenar modelo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Evaluar métricas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Consiste en generar nuevas características."
+            },
+            {
+                "id": 22,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica reduce dimensionalidad?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "PCA"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "One-hot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Scaling"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Shuffle"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "PCA reduce dimensiones."
+            },
+            {
+                "id": 23,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué porcentaje suele tener el conjunto de training?",
                 "opciones": [
                     {
                         "id": "a",
@@ -151,7 +576,7 @@
                     },
                     {
                         "id": "c",
-                        "texto": "70–90%"
+                        "texto": "70-90%"
                     },
                     {
                         "id": "d",
@@ -159,482 +584,57 @@
                     }
                 ],
                 "respuesta_correcta": "c",
-                "explicacion": "El training suele ocupar la mayor parte del dataset."
-            },
-            {
-                "id": 7,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué proceso incluye ETL?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Entrenamiento"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Extracción y transformación de datos"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Validación"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Optimización"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "ETL significa extracción, transformación y carga de datos."
-            },
-            {
-                "id": 8,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué mide la precisión de datos?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Cantidad"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Correctitud de valores"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Formato"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Velocidad"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "La precisión se refiere a que los datos sean correctos."
-            },
-            {
-                "id": 9,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué técnica se usa para valores faltantes?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Overfitting"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Imputación"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Dropout"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Clustering"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "La imputación reemplaza valores faltantes."
-            },
-            {
-                "id": 10,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué gráfico muestra distribución?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Pie"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Histogram"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Line"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Bar"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "El histograma representa distribuciones."
-            },
-            {
-                "id": 11,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué escalado es sensible a outliers?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Robust"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Min-Max"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Z-score"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Log"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Min-Max depende de valores extremos."
-            },
-            {
-                "id": 12,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué método centra datos en media 0?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Min-Max"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Z-score"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Robust"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "One-hot"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Z-score normaliza con media 0 y desviación 1."
-            },
-            {
-                "id": 13,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué codificación crea columnas binarias?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Label encoding"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "One-hot encoding"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Target encoding"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Scaling"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "One-hot crea columnas binarias por categoría."
-            },
-            {
-                "id": 14,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué es feature engineering?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Eliminar datos"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Crear nuevas características"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Entrenar modelos"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Evaluar métricas"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Consiste en generar nuevas variables útiles."
-            },
-            {
-                "id": 15,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué técnica reduce dimensionalidad?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "KNN"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "PCA"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Random Forest"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "SVM"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "PCA reduce dimensiones."
-            },
-            {
-                "id": 16,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué mide accuracy?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Errores totales"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Predicciones correctas"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Falsos positivos"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Recall"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Accuracy mide proporción de aciertos."
-            },
-            {
-                "id": 17,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué es recall?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "TP/(TP+FN)"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "TP/(TP+FP)"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "FN/(TP+FP)"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "FP/(TN+TP)"
-                    }
-                ],
-                "respuesta_correcta": "a",
-                "explicacion": "Recall mide detección de positivos reales."
-            },
-            {
-                "id": 18,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué indica AUC?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Tiempo de entrenamiento"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Calidad del modelo"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Número de variables"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Precisión de datos"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "AUC mide rendimiento del modelo."
-            },
-            {
-                "id": 19,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué métrica es para regresión?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Accuracy"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "F1"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "MSE"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "ROC"
-                    }
-                ],
-                "respuesta_correcta": "c",
-                "explicacion": "MSE mide error en regresión."
-            },
-            {
-                "id": 20,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué es overfitting?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Modelo simple"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Modelo muy complejo"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Modelo sin datos"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Modelo rápido"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Overfitting ocurre cuando el modelo se ajusta demasiado."
-            },
-            {
-                "id": 21,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué técnica evita overfitting?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Dropout"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Clustering"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "EDA"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "ETL"
-                    }
-                ],
-                "respuesta_correcta": "a",
-                "explicacion": "Dropout reduce sobreajuste."
-            },
-            {
-                "id": 22,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué es L1?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Ridge"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Lasso"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Elastic"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "Dropout"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "L1 corresponde a Lasso."
-            },
-            {
-                "id": 23,
-                "tipo": "opcion_unica",
-                "enunciado": "¿Qué es Grid Search?",
-                "opciones": [
-                    {
-                        "id": "a",
-                        "texto": "Modelo"
-                    },
-                    {
-                        "id": "b",
-                        "texto": "Optimización de hiperparámetros"
-                    },
-                    {
-                        "id": "c",
-                        "texto": "Visualización"
-                    },
-                    {
-                        "id": "d",
-                        "texto": "ETL"
-                    }
-                ],
-                "respuesta_correcta": "b",
-                "explicacion": "Grid Search prueba combinaciones de parámetros."
+                "explicacion": "Es la mayor parte del dataset."
             },
             {
                 "id": 24,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué es pruning?",
+                "enunciado": "¿Para qué sirve el conjunto de test?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "Eliminar nodos innecesarios"
+                        "texto": "Entrenar"
                     },
                     {
                         "id": "b",
-                        "texto": "Crear datos"
+                        "texto": "Validar durante entrenamiento"
                     },
                     {
                         "id": "c",
-                        "texto": "Entrenar modelo"
+                        "texto": "Evaluar al final"
                     },
                     {
                         "id": "d",
-                        "texto": "Normalizar"
+                        "texto": "Limpiar datos"
                     }
                 ],
-                "respuesta_correcta": "a",
-                "explicacion": "Pruning reduce complejidad."
+                "respuesta_correcta": "c",
+                "explicacion": "Se usa solo al final."
             },
             {
                 "id": 25,
                 "tipo": "opcion_unica",
-                "enunciado": "¿Qué herramienta es de ML?",
+                "enunciado": "¿Qué es un True Positive?",
                 "opciones": [
                     {
                         "id": "a",
-                        "texto": "Photoshop"
+                        "texto": "Predicción 0 real 0"
                     },
                     {
                         "id": "b",
-                        "texto": "Scikit-learn"
+                        "texto": "Predicción 1 real 1"
                     },
                     {
                         "id": "c",
-                        "texto": "Excel"
+                        "texto": "Predicción 1 real 0"
                     },
                     {
                         "id": "d",
-                        "texto": "Word"
+                        "texto": "Predicción 0 real 1"
                     }
                 ],
                 "respuesta_correcta": "b",
-                "explicacion": "Scikit-learn es librería de ML."
+                "explicacion": "Acierto en clase positiva."
             }
         ]
     }

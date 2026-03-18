@@ -1,17 +1,22 @@
 [
   {
     "id": "quiz-001",
-    "titulo": "Selección de Algoritmos y Proceso de Entrenamiento",
+    "titulo": "GEMINI: Selección de Algoritmos y Proceso de Entrenamiento",
     "archivo": "examen.json"
   },
   {
     "id": "quiz-002",
-    "titulo": "Sistemes d’Aprenentatge Automàtic",
+    "titulo": "GEMINI: Sistemes d’Aprenentatge Automàtic",
     "archivo": "examen2.json"
   },
   {
     "id": "quiz-003",
-    "titulo": "Selección de algoritmos y proceso de aprendizaje automático",
+    "titulo": "CHATGPT: Selección de algoritmos y proceso de aprendizaje automático",
     "archivo": "examen3.json"
+  },
+  {
+    "id": "quiz-004",
+    "titulo": "CHATGPT: Selección de algoritmos y proceso de aprendizaje automático",
+    "archivo": "examen4.json"
   }
 ]
