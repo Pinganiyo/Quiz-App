@@ -1,0 +1,1273 @@
+{
+    "examen": {
+        "id": "quiz-001",
+        "titulo": "Selección de Algoritmos y Proceso de Entrenamiento",
+        "descripcion": "Evaluación integral sobre determinación de problemas, pre-procesamiento, fases de ML y plataformas.",
+        "configuracion": {
+            "tiempo_limite_minutos": 60,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el primer paso antes de decidir si usar IA para resolver un problema?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Elegir el framework de deep learning"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Determinar si el problema se puede resolver sin IA (automatización, heurística)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcular el índice de silueta"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Aplicar One-hot encoding"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Antes de aplicar IA, se debe evaluar si métodos más simples como la heurística son suficientes."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "En el enfoque de datos 'Medallón', ¿cuál es el orden correcto de las capas de procesamiento?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Oro, Plata, Bronce"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Plata, Bronce, Oro"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Bronce, Plata, Oro"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La arquitectura de medallón progresa desde datos brutos (Bronce) hasta datos listos para consumo (Oro)."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué porcentaje aproximado del éxito de un modelo de IA depende de los datos según el temario?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "20%"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "50%"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "80% o más"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Solo el 10%, el resto es el algoritmo"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El pre-procesamiento y la calidad de los datos representan la mayor parte del éxito en ML."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'Completitud' en la calidad de los datos se refiere a:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Que los datos sean coherentes en todo el dataset"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Que no haya demasiados valores o etiquetas faltantes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Que el volumen de datos sea suficiente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Que los datos representen la variabilidad del problema"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La completitud mide la ausencia de valores nulos o faltantes."
+            },
+            {
+                "id": 5,
+                "tipo": "seleccion_multiple",
+                "enunciado": "Selecciona las estrategias válidas para la gestión de valores faltantes:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Eliminar registros"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Imputar la media"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aplicar un KNN para estimar el valor"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ignorar el problema siempre"
+                    }
+                ],
+                "respuesta_correcta": [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                "explicacion": "Se pueden eliminar si son pocos o imputarlos mediante estadística o algoritmos."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico es el más adecuado para medir la variabilidad salarial (cuartiles, mediana y outliers)?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pie plot"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Scatter plot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Box plot"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Line plot"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El Box plot (diagrama de caja) es ideal para visualizar la dispersión y outliers."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de las siguientes técnicas de escalado convierte los datos a un rango (0, 1) pero es muy sensible a outliers?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Min-max scaling"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Robust scaling"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Z-score normalization"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Log normalization"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Min-max escala al rango 0-1 basándose en el mínimo y máximo, afectándose por valores extremos."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "La normalización Z-score convierte los datos para que tengan:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Mínimo 0 y máximo 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Media 0 y desviación estándar 1"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Mediana 0 e IQR 1"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El Z-score estandariza la distribución basándose en la media y la desviación."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de codificación crea una nueva columna binaria por cada categoría única?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Label encoding"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Target encoding"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "One-hot encoding"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "None of the above"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "One-hot encoding expande las categorías en columnas de ceros y unos."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "El 'Target encoding' consiste en reemplazar la categoría por:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Un número entero aleatorio"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La media de la variable objetivo para esa categoría"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La frecuencia de aparición"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Un vector binario"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Utiliza la información de la variable de salida para codificar la categoría."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es un ejemplo de Feature Engineering de combinación de variables?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Eliminar outliers"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Dividir 'pages_viewed' por 'total_time_seconds'"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Cambiar el formato de la fecha"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Crear nuevas métricas combinando columnas existentes es una práctica clave de ingeniería de características."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica NO es un modelo de reducción de dimensionalidad?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "PCA"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "t-SNE"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "K-fold Cross-validation"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "LDA"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "K-fold es una técnica de validación, no de reducción de dimensiones."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "En la división de datos, ¿para qué sirve el conjunto de 'Validation'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Para entrenar los pesos iniciales"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Para ajustar el modelo y evitar overfitting al final de cada iteración"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Para la evaluación final una sola vez"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Para limpiar los outliers"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La validación permite ajustar hiperparámetros y monitorear el progreso durante el entrenamiento."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "En una matriz de confusión, un 'False Negative' (FN) significa:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Predicción 1, clase real 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Predicción 1, clase real 0"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Predicción 0, clase real 1"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Predicción 0, clase real 0"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El modelo predijo negativo cuando en realidad era positivo."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "La métrica 'Accuracy' (Exactitud) se define como:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Lo bien que el modelo acierta la clase 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El acierto total del modelo independientemente de la clase"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La media harmónica entre precisión y recall"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El área bajo la curva ROC"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Accuracy mide el porcentaje total de predicciones correctas."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué representa la Curva ROC?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La relación entre la media y la varianza"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La variación entre FP (eje X) y TP (eje Y) al cambiar el threshold"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La pérdida del modelo durante las épocas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "La distribución de los clusters"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Muestra el rendimiento del clasificador en todos los umbrales de clasificación."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "Para problemas de regresión, el coeficiente $R^2$ indica:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El número de clusters óptimos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La probabilidad de que una clase sea correcta"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La correlación lineal entre la variable dependiente y el modelo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "R-cuadrado mide qué tan cerca están los datos de la línea de regresión ajustada."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "En clustering, ¿qué indica un Índice de Silueta cercano a 1?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Que el punto está muy lejos de cualquier cluster"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Que el punto se encuentra en el centro de su cluster"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Que hay mucho ruido en el dataset"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Que el modelo tiene overfitting"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Un valor cercano a 1 indica que el objeto está bien emparejado con su propio grupo y mal con los vecinos."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de regularización suma las penalizaciones L1 y L2?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Lasso"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Ridge"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Elastic Net"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Dropout"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Elastic Net combina ambas penalizaciones para aprovechar sus beneficios."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "El 'Early Stopping' consiste en:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Detener el entrenamiento cuando el tiempo se agota"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Detener el entrenamiento cuando la métrica de validación deja de mejorar"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Detener el proceso si hay outliers"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Evita el overfitting deteniendo el entrenamiento en el punto óptimo de la métrica de validación."
+            },
+            {
+                "id": 21,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de ajuste de hiperparámetros utiliza un modelo probabilístico para encontrar la mejor combinación?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grid search"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Random search"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Bayesian optimization"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Cross validation"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La optimización bayesiana es más eficiente que probar combinaciones al azar o exhaustivamente."
+            },
+            {
+                "id": 22,
+                "tipo": "seleccion_multiple",
+                "enunciado": "Selecciona las técnicas de optimización del modelo entrenado:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Cuantización"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Poda (pruning)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Conversión a formato ONNX"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Aumento del dataset"
+                    }
+                ],
+                "respuesta_correcta": [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                "explicacion": "Estas técnicas reducen el tamaño o mejoran la velocidad del modelo ya entrenado."
+            },
+            {
+                "id": 23,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es MLOps?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Un tipo de algoritmo de clustering"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Una técnica para eliminar valores duplicados"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La aplicación de prácticas DevOps al ciclo de vida de Machine Learning"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "MLOps busca automatizar y operacionalizar los modelos de IA."
+            },
+            {
+                "id": 24,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos frameworks es el más conocido para modelos clásicos de ML e integrable con Pandas?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "TensorFlow"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "PyTorch"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Scikit-learn"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Keras"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Scikit-learn es el estándar de oro para ML tradicional en Python."
+            },
+            {
+                "id": 25,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'Consistencia' en la calidad de los datos significa que:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Hay un volumen masivo de datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Los datos y etiquetas son coherentes en todo el dataset (ej. series temporales)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Los datos no tienen outliers"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La consistencia asegura que no haya contradicciones internas en la información."
+            },
+            {
+                "id": 26,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Para qué sirve el 'Stratified K-fold'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Para asegurar que cada fold mantenga la proporción de clases original"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Para reducir la dimensionalidad de las imágenes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Para eliminar registros nulos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Para convertir texto en números"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Es vital cuando las clases están desbalanceadas."
+            },
+            {
+                "id": 27,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico usarías para ver la evolución mensual de ventas en 3 años?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Bar plot"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Line plot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Histogram"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Pie plot"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Los gráficos de líneas son los mejores para visualizar series temporales."
+            },
+            {
+                "id": 28,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide el Índice de Dunn?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El error cuadrático medio"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La precisión del modelo supervisado"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Si los clusters son compactos y están bien separados"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El tiempo de despliegue en Kubernetes"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Es una métrica de validación interna para algoritmos de clustering."
+            },
+            {
+                "id": 29,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'Poda' o pruning en redes neuronales se usa para:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Añadir más capas al modelo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Eliminar conexiones o neuronas con pesos bajos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Limpiar los datos de entrenamiento"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Ayuda a que el modelo sea más ligero sin perder mucha precisión."
+            },
+            {
+                "id": 30,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la herramienta recomendada para control de versiones en MLOps?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grafana"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Prometheus"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Git o DVC"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Kibana"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Git gestiona código y DVC gestiona versiones de datos y modelos."
+            },
+            {
+                "id": 31,
+                "tipo": "opcion_unica",
+                "enunciado": "El problema de 'Underfitting' ocurre cuando:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El modelo es demasiado complejo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El modelo es demasiado simple para captar los patrones"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Hay demasiados datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El bajo ajuste se soluciona aumentando la complejidad del modelo."
+            },
+            {
+                "id": 32,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué formato es específico para Keras y TensorFlow?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pickle"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Joblib"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "HDF5"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "CSV"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "HDF5 es comúnmente usado para guardar modelos de redes neuronales."
+            },
+            {
+                "id": 33,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'Precisión' (Precision) en clasificación binaria es alta cuando:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El modelo no falla al predecir la clase 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El modelo acierta la mayoría de veces que predice clase 1"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El modelo acierta la clase 0 siempre"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El área AUC es 0.5"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Mide la calidad de las predicciones positivas."
+            },
+            {
+                "id": 34,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué se entiende por 'Data Ready for AI'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Tener muchos archivos Excel"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Datos preparados, limpios y estructurados para ser el combustible de la IA"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Comprar GPUs nuevas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Es un enfoque de mercado que prioriza la preparación de los datos antes que el modelo."
+            },
+            {
+                "id": 35,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de transformación reduce la asimetría y el impacto de outliers pero NO sirve para valores negativos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Min-max scaling"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Z-score"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Log normalization"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "One-hot encoding"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El logaritmo de números negativos no está definido, por lo que requiere valores positivos."
+            },
+            {
+                "id": 36,
+                "tipo": "opcion_unica",
+                "enunciado": "En el contexto de ETL, la 'L' significa:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Linear"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Label"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Load"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Link"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "ETL significa Extract, Transform and Load."
+            },
+            {
+                "id": 37,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el objetivo de la normalización 'Robust Scaling'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Ser menos sensible a los outliers usando mediana e IQR"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Convertir todo a media 0"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar todas las variables categóricas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Al usar percentiles en lugar de min/max, los valores extremos afectan menos al escalado."
+            },
+            {
+                "id": 38,
+                "tipo": "opcion_unica",
+                "enunciado": "Si quieres comparar el número de estudiantes en 5 facultades diferentes, el gráfico ideal es:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Scatter plot"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Bar plot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Line plot"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Box plot"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las barras son mejores para comparar categorías discretas e independientes."
+            },
+            {
+                "id": 39,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'F1 score' es:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La suma de TP y TN"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La media harmónica entre precisión y recall"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El número de iteraciones del modelo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "La raíz cuadrada del MSE"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Proporciona un equilibrio entre precisión y sensibilidad en una sola métrica."
+            },
+            {
+                "id": 40,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta se usa para la monitorización de modelos en producción?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Keras"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Git"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Grafana o Prometheus"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Pickle"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Estas herramientas permiten observar el estado y rendimiento del sistema en tiempo real."
+            },
+            {
+                "id": 41,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la función del conjunto de 'Test'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Entrenar el modelo día a día"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Verificar el modelo al final con dades que nunca ha visto"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Extraer los outliers"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El test sirve para dar una estimación final e imparcial del rendimiento."
+            },
+            {
+                "id": 42,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de Feature Engineering usarías para captar relaciones NO lineales?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Elevar una característica al cuadrado"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Usar Label Encoding"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar la columna"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Las transformaciones polinómicas permiten que modelos lineales capturen curvaturas."
+            },
+            {
+                "id": 43,
+                "tipo": "opcion_unica",
+                "enunciado": "La 'Diversidad' en los datos significa que:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Los datos están en muchos servidores"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Las dades representen la variabilidad del problema a resolver"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Todos los datos son números enteros"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Sin diversidad, el modelo no podrá generalizar ante casos distintos."
+            },
+            {
+                "id": 44,
+                "tipo": "opcion_unica",
+                "enunciado": "Para desplegar un modelo en un servidor accesible vía API, se suelen seguir prácticas de:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Descriptive statistics"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "DevOps / MLOps"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Data cleaning"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Data Ready for AI"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "MLOps es el estándar para poner modelos en producción de forma robusta."
+            },
+            {
+                "id": 45,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué framework es una alternativa 'sencilla y flexible' a TensorFlow para redes neuronales?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pandas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "PyTorch"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Matplotlib"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Numpy"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "PyTorch y Keras son conocidos por ser más intuitivos que TensorFlow puro."
+            },
+            {
+                "id": 46,
+                "tipo": "opcion_unica",
+                "enunciado": "Un 'True Negative' (TN) es:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Predicción 0, clase real 0"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Predicción 1, clase real 1"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Predicción 1, clase real 0"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Predicción 0, clase real 1"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "El modelo predijo correctamente la ausencia de la clase."
+            },
+            {
+                "id": 47,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide el coeficiente de información mutua?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La velocidad de la GPU"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La relevancia de una característica respecto a otra (reducción de dimensionalidad)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El número de nulos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Es una herramienta para seleccionar las características más importantes."
+            },
+            {
+                "id": 48,
+                "tipo": "opcion_unica",
+                "enunciado": "El formato ONNX sirve para:",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Limpiar outliers automáticamente"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Intercambiar redes neuronales entre diferentes frameworks"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcular la media de los datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Crear gráficos de barras"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Open Neural Network Exchange permite la interoperabilidad entre herramientas de IA."
+            },
+            {
+                "id": 49,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos es un optimizador para ajustar el entrenamiento?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "MSE"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Grid Search"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Adam (mencionado implícitamente en frameworks)"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Grid Search es una estrategia para optimizar la configuración de hiperparámetros."
+            },
+            {
+                "id": 50,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué determina la 'Precisión' en la calidad de datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La certeza de que las dades son correctas y sin excesivos outliers"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El número total de filas"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El formato del archivo (CSV vs JSON)"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Se refiere a la exactitud y veracidad de los valores registrados."
+            }
+        ]
+    }
+}

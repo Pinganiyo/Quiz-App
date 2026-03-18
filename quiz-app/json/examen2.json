@@ -1,0 +1,1265 @@
+{
+    "examen": {
+        "id": "quiz-002",
+        "titulo": "Sistemes d’Aprenentatge Automàtic",
+        "descripcion": "Evaluación integral sobre selección de algoritmos, preprocesamiento, entrenamiento y despliegue de modelos de IA.",
+        "configuracion": {
+            "tiempo_limite_minutos": 60,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "Según el temario, ¿qué porcentaje del éxito de un modelo de IA depende de la calidad de las dades?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El 50%"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El 60%"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El 80%"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El 95%"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El preprocesamiento y la calidad de los datos representan aproximadamente el 80% del éxito del modelo."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué arquitectura de datos se menciona para organizar la información en niveles de madurez?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Arquitectura de Microservicios"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Arquitectura Medallón (Bronze, Plata, Or)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Arquitectura de Redes Neuronales"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Arquitectura Monolítica"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La arquitectura medallón organiza los datos en capas Bronze (crudo), Plata (limpio) y Oro (listo para negocio/IA)."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "Si queremos comparar la evolución temporal de una variable, ¿qué gráfico es el más adecuado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pie chart"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Boxplot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Line chart"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Histogram"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Los gráficos de líneas son ideales para mostrar tendencias y evolución a lo largo del tiempo."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de las siguientes es una métrica específica para problemas de Regresión?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "F1-score"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "MSE (Mean Squared Error)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Recall"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "AUC"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "MSE, MAE y R² son métricas utilizadas para evaluar modelos de regresión."
+            },
+            {
+                "id": 5,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de escalado es la menos sensible a los outliers (valores atípicos)?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Min-Max Scaling"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Robust Scaling"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Z-score"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son sensibles por igual"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Robust Scaling utiliza estadísticas como la mediana y los cuartiles, lo que lo hace menos sensible a valores extremos."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "En una matriz de confusión para clasificación binaria, ¿qué significa 'FP'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Falsos Positivos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Falsos Próximos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Frecuencia Positiva"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "FP corresponde a Falsos Positivos (el modelo predice positivo cuando es negativo)."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el objetivo principal de la técnica PCA (Principal Component Analysis)?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aumentar el número de variables"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reducción de dimensionalidad"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Clasificar imágenes automáticamente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Limpiar valores duplicados"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "PCA es un método de reducción de dimensionalidad que busca las variables con mayor varianza."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué ocurre cuando un modelo es demasiado complejo y se ajusta excesivamente a los datos de entrenamiento?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Underfitting"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Optimización perfecta"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Overfitting"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Normalización"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El overfitting ocurre cuando el modelo 'memoriza' el ruido de los datos de entrenamiento y no generaliza bien."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de optimización consiste en eliminar conexiones o neuronas poco importantes?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Quantització"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pruning"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Data Augmentation"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Early stopping"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El Pruning (poda) reduce el tamaño y la complejidad del modelo eliminando parámetros redundantes."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "En MLOps, ¿qué herramienta es comúnmente utilizada para el control de versiones de modelos y experimentos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "MLflow"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Excel"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "PowerPoint"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "MLflow es una plataforma abierta para gestionar el ciclo de vida de ML, incluyendo el seguimiento de experimentos."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué porcentaje se suele asignar típicamente al conjunto de Training?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "10–20%"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "70–90%"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "50%"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "100%"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La mayor parte del dataset se reserva para entrenamiento, típicamente entre el 70% y el 90%."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos es un problema típico abordado por el Aprendizaje No Supervisado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Clasificación de spam"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Predicción del precio de la vivienda"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Clustering (Agrupamiento)"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Detección de fraude etiquetado"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El clustering busca patrones y agrupaciones en datos que no tienen etiquetas previas."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la característica principal de la métrica R²?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Es el coeficiente de determinación en regresión"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Mide el error absoluto medio"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Es exclusiva de redes neuronales convolucionales"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "R² indica qué proporción de la varianza de la variable dependiente es previsible a partir de las independientes."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de codificación crea una columna nueva por cada categoría?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Label encoding"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Target encoding"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "One-hot encoding"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Z-score encoding"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "One-hot encoding crea vectores binarios donde cada columna representa una categoría única."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de los siguientes NO es un tipo de gráfico para EDA mencionado en el texto?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Scatter"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Boxplot"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Diagrama de flujo de calor infrarrojo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Histogram"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El diagrama de flujo de calor infrarrojo no es un gráfico estándar de EDA mencionado."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué permite medir la Curva ROC?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La relación entre FP y TP"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La velocidad del procesador"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La cantidad de datos faltantes"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El coste de las etiquetas"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "La curva ROC enfrenta la tasa de falsos positivos frente a la tasa de verdaderos positivos."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué significa que el AUC sea cercano a 1?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El modelo es muy malo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El modelo tiene una alta calidad de clasificación"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El modelo tiene mucho ruido"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "AUC (Área Bajo la Curva) mide la capacidad de discriminación; 1 es el valor ideal."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estas opciones es un ejemplo de Feature Engineering?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Convertir una fecha en 'día de la semana'"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Calcular la media de una variable por usuario"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Combinar dos variables para crear una nueva"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son técnicas para crear nuevas características a partir de los datos existentes para mejorar el modelo."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de regularización se conoce como Lasso?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "L1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "L2"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Elastic Net"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Dropout"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "La regularización L1 es comúnmente llamada Lasso y puede reducir coeficientes a cero."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Para qué sirve el 'Early stopping'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Para apagar el servidor si se sobrecalienta"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Para detener el entrenamiento cuando la métrica de validación deja de mejorar"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Para eliminar outliers automáticamente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Early stopping previene el overfitting deteniendo el entrenamiento en el punto óptimo."
+            },
+            {
+                "id": 21,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la principal diferencia entre Grid Search y Random Search?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grid Search es más rápido siempre"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Random Search prueba todas las combinaciones posibles"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Grid Search prueba todas las combinaciones; Random Search selecciona muestras aleatorias"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "No hay diferencia real"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Grid Search es exhaustivo dentro de un rango, mientras que Random Search es probabilístico."
+            },
+            {
+                "id": 22,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estas librerías NO es una plataforma de ML mencionada en el tema?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "TensorFlow"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "PyTorch"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Scikit-learn"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Photoshop"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Photoshop es un software de edición de imagen, no una plataforma de desarrollo de ML."
+            },
+            {
+                "id": 23,
+                "tipo": "opcion_unica",
+                "enunciado": "¿En qué consiste la 'Imputación' de valores?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "En eliminar las filas con errores"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "En asignar un valor (como la media) a los datos faltantes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "En multiplicar todos los valores por dos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "En encriptar los datos sensibles"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La imputación es la práctica de reemplazar datos faltantes con estimaciones estadísticas."
+            },
+            {
+                "id": 24,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide el índice de Silueta (Silhouette score)?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La precisión de una regresión"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La calidad de los clusters en aprendizaje no supervisado"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El tiempo de despliegue en Docker"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Es una medida de cuán similar es un objeto a su propio cluster en comparación con otros clusters."
+            },
+            {
+                "id": 25,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta se usa habitualmente para monitorización en MLOps?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grafana"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Prometheus"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Kibana"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Grafana, Prometheus y Kibana son herramientas estándar para la monitorización de sistemas y modelos."
+            },
+            {
+                "id": 26,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la función de 'Z-score' en la transformación de datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Escalar los datos para que tengan media 0 y desviación estándar 1"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Eliminar todos los valores negativos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Convertir texto en números binarios"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Reducir el dataset a la mitad"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "La estandarización Z-score centra los datos en la media y los escala según la desviación típica."
+            },
+            {
+                "id": 27,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema se presenta si un modelo es 'massa simple'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Overfitting"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Underfitting"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Regularización L2"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Alta varianza"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El underfitting ocurre cuando el modelo no tiene suficiente capacidad para capturar la estructura de los datos."
+            },
+            {
+                "id": 28,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos formatos es común para la compresión y exportación de modelos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "ONNX"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pickle / Joblib"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "HDF5"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "ONNX, Pickle, Joblib y HDF5 son formatos utilizados para guardar y comprimir modelos entrenados."
+            },
+            {
+                "id": 29,
+                "tipo": "opcion_unica",
+                "enunciado": "En el contexto de calidad de datos, ¿a qué se refiere la 'Diversidad'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "A tener muchos archivos de diferentes colores"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "A que los datos representen correctamente todas las facetas del problema"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "A usar diferentes lenguajes de programación"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La diversidad asegura que el modelo aprenda de una muestra representativa de la realidad."
+            },
+            {
+                "id": 30,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la métrica de regresión que indica el promedio de los errores al cuadrado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "MAE"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "MSE"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "R²"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Accuracy"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "MSE (Mean Squared Error) eleva los errores al cuadrado antes de promediarlos."
+            },
+            {
+                "id": 31,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué significa que un dataset esté 'Unbalanced' (desequilibrado)?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Que tiene demasiados valores nulos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Que una clase tiene muchas más muestras que otras"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Que los datos no están ordenados alfabéticamente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Que el peso del archivo es excesivo"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El desequilibrio de clases ocurre cuando la distribución de las etiquetas no es uniforme."
+            },
+            {
+                "id": 32,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es la 'Quantització' (cuantización) de un modelo?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Contar cuántas neuronas tiene"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reducir la precisión de los pesos (ej. de float32 a int8) para ganar velocidad"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aumentar el número de datos de entrenamiento"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La cuantización reduce el tamaño del modelo y acelera la inferencia al usar tipos de datos menos pesados."
+            },
+            {
+                "id": 33,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la utilidad del gráfico Boxplot?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Ver la evolución temporal"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Observar la dispersión y detectar outliers"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Contar palabras en un texto"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Representar porcentajes de un total"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El diagrama de caja (boxplot) muestra cuartiles, medianas y valores atípicos de forma visual."
+            },
+            {
+                "id": 34,
+                "tipo": "opcion_unica",
+                "enunciado": "En la fase de preprocesamiento, ¿qué significa ETL?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Extract, Transform, Load"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Energy, Time, Logic"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Extended Tool Language"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "ETL son las siglas de Extracción, Transformación y Carga de datos."
+            },
+            {
+                "id": 35,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de validación divide el dataset en 'K' partes para entrenar y validar repetidamente?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Simple split"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Cross-validation (K-fold)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Dropout"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Label encoding"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "K-fold cross-validation permite evaluar la robustez del modelo usando diferentes particiones."
+            },
+            {
+                "id": 36,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mística combina Precision y Recall en un solo valor?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Accuracy"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "F1-score"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "AUC"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "MSE"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El F1-score es la media armónica entre precisión y exhaustividad (recall)."
+            },
+            {
+                "id": 37,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es 'DVC' en el contexto de MLOps?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Data Version Control"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Digital Video Center"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Deep Virtual Computer"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "DVC es una herramienta para el control de versiones de datos y modelos, similar a Git para código."
+            },
+            {
+                "id": 38,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos métodos se usa para la optimización de hiperparámetros basándose en probabilidades?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grid Search"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Bayesian Optimization"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Manual Tuning"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La optimización bayesiana utiliza resultados previos para predecir qué hiperparámetros funcionarán mejor."
+            },
+            {
+                "id": 39,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica se utiliza en redes neuronales para evitar el overfitting desactivando neuronas aleatoriamente?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Quantization"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pruning"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Dropout"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Scaling"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El Dropout ayuda a que la red no dependa excesivamente de neuronas específicas, mejorando la generalización."
+            },
+            {
+                "id": 40,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide el Coeficiente de Correlación de Pearson?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La relación lineal entre dos variables"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El número de valores nulos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La velocidad de entrenamiento"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "La cantidad de memoria GPU usada"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Pearson mide el grado de relación lineal entre dos variables numéricas."
+            },
+            {
+                "id": 41,
+                "tipo": "opcion_unica",
+                "enunciado": "¿A qué fase corresponde la creación de APIs para consumir el modelo?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pre-processament"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Entrenament"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Desplegament (Deployment)"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "EDA"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El despliegue implica poner el modelo en producción, a menudo mediante una API."
+            },
+            {
+                "id": 42,
+                "tipo": "opcion_unica",
+                "enunciado": "En un problema de detección de enfermedades raras, ¿qué métrica suele ser más crítica que la Accuracy?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Recall (para no perder positivos)"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Número de duplicados"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Versión de Python"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "En medicina, suele ser preferible detectar todos los casos posibles (alto recall) aunque haya algún falso positivo."
+            },
+            {
+                "id": 43,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué indica un valor de R² cercano a 0?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El modelo explica perfectamente los datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El modelo no explica la variabilidad de los datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Hay demasiadas variables"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El dataset es demasiado pequeño"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Un R² bajo indica que el modelo de regresión no se ajusta bien a los datos observados."
+            },
+            {
+                "id": 44,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta se menciona para la orquestación y CI/CD con contenedores?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Kubernetes"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Docker"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Jenkins"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Docker, Kubernetes y Jenkins son pilares del CI/CD y la orquestación moderna en MLOps."
+            },
+            {
+                "id": 45,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos es un estadístico agregado útil para Feature Engineering?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Media de tiempo por página por usuario"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Número de visitas por país"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Máximo gasto por dispositivo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Cualquier agregación estadística que aporte contexto sobre los datos originales es valiosa para el modelo."
+            },
+            {
+                "id": 46,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es 'Target encoding'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Codificar categorías usando la media de la variable objetivo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Eliminar la columna objetivo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Convertir imágenes en texto"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Es una técnica de codificación de variables categóricas basada en la relación con el target."
+            },
+            {
+                "id": 47,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué busca el aprendizaje supervisado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Encontrar grupos desconocidos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Modelar la relación entre datos de entrada y etiquetas"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Limpiar el disco duro automáticamente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Comprimir archivos ZIP"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Se basa en aprender de datos etiquetados (input-output) para predecir resultados futuros."
+            },
+            {
+                "id": 48,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de estos es un algoritmo para reducción de dimensionalidad no lineal?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "LDA"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "t-SNE"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Min-Max"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "One-hot"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "t-SNE es una técnica de reducción de dimensionalidad popular para visualización de datos complejos."
+            },
+            {
+                "id": 49,
+                "tipo": "opcion_unica",
+                "enunciado": "¿En qué capa de la arquitectura medallón se encuentran los datos listos para IA?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Bronze"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Plata"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Or"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La capa Oro (Or) contiene los datos limpios, agregados y optimizados para el consumo final."
+            },
+            {
+                "id": 50,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué significa que un modelo sea 'Data Ready for AI'?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Que los datos están en un Excel"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Que los datos cumplen con calidad, formato y estructura para ser procesados por IA"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Que los datos han sido borrados"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Que los datos son solo imágenes"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Estar 'Data Ready' implica que los datos son el combustible apto para alimentar algoritmos de IA."
+            }
+        ]
+    }
+}

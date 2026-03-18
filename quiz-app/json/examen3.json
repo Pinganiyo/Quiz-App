@@ -1,0 +1,1266 @@
+{
+    "examen": {
+        "id": "quiz-003",
+        "titulo": "Selección de algoritmos y proceso de aprendizaje automático",
+        "descripcion": "Examen tipo test sobre el proceso completo de machine learning, desde el planteamiento hasta el despliegue.",
+        "configuracion": {
+            "tiempo_limite_minutos": 30,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué se debe analizar primero antes de aplicar IA a un problema?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Si se puede resolver sin IA"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El coste del hardware"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "El lenguaje de programación"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Antes de usar IA se debe evaluar si el problema puede resolverse con métodos más simples."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué caracteriza al aprendizaje supervisado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "No tiene etiquetas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Existe relación entre datos y etiquetas"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Solo usa clustering"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El aprendizaje supervisado utiliza datos etiquetados."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué se busca en el aprendizaje no supervisado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Etiquetas explícitas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Patrones ocultos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Datos etiquetados manualmente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El objetivo es encontrar patrones sin etiquetas."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de los siguientes factores afecta a la disponibilidad de datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Volumen de datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Coste de obtención"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Formato de datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todos estos factores influyen en la disponibilidad de datos."
+            },
+            {
+                "id": 5,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es el EDA?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Entrenamiento automático"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Análisis exploratorio de datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Evaluación de modelos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "EDA significa análisis exploratorio de datos."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué tipo de datos puede analizarse en EDA?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Texto"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Imágenes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Datos numéricos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "EDA puede trabajar con múltiples tipos de datos."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué indica un dataset desbalanceado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Distribución desigual de etiquetas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Datos duplicados"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Datos faltantes"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Un dataset desbalanceado tiene clases con diferente frecuencia."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué porcentaje del éxito del modelo depende de los datos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "20%"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "50%"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "80%"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "100%"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El 80% del éxito depende de la calidad de los datos."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué significa ETL?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Extraer, Transformar, Cargar"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Evaluar, Testear, Loggear"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Entrenar, Testear, Lanzar"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "ETL es el proceso de extracción, transformación y carga de datos."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es una característica de datos de calidad?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Precisión"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Consistencia"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Completitud"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "La calidad de datos incluye todas estas características."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cómo se pueden tratar los valores faltantes?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Imputar valores"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Ambas opciones son válidas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Se pueden eliminar o imputar valores faltantes."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica se usa para detectar outliers?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "IQR"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Percentiles"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Boxplot"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son técnicas válidas."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico se usa para ver proporciones?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pie"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Scatter"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Line"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "El gráfico circular muestra proporciones."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué gráfico muestra relaciones entre variables?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Scatter"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Pie"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Histogram"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Scatter muestra relaciones entre variables."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica escala los datos entre 0 y 1?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Z-score"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Min-Max Scaling"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Log normalization"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Min-Max escala entre 0 y 1."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica es menos sensible a outliers?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Min-Max"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Robust Scaling"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Z-score"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Robust Scaling usa percentiles."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué método convierte categorías en variables binarias?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Label encoding"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "One-hot encoding"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Target encoding"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "One-hot crea columnas binarias."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es el feature engineering?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Crear nuevas características"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Reducir datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Consiste en crear variables útiles."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica reduce dimensionalidad?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "PCA"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "LDA"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "t-SNE"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son técnicas de reducción."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué porcentaje suele ser el conjunto de entrenamiento?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "10%"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "30%"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "70–90%"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "100%"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El entrenamiento suele ocupar la mayor parte."
+            },
+            {
+                "id": 21,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué fase incluye ajuste de hiperparámetros?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Entrenamiento"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Optimización"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Configuración inicial"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "El ajuste puede intervenir en varias fases."
+            },
+            {
+                "id": 22,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué representa TP?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Verdaderos positivos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Falsos positivos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Verdaderos negativos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores es correcta"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "TP son predicciones correctas positivas."
+            },
+            {
+                "id": 23,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué métrica mide proporción de aciertos?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Recall"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Precision"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Accuracy"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "F1-score"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Accuracy mide aciertos totales."
+            },
+            {
+                "id": 24,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué métrica combina precision y recall?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Accuracy"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "F1-score"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "MSE"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "F1-score es media armónica."
+            },
+            {
+                "id": 25,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué indica un AUC cercano a 1?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Modelo malo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Modelo aleatorio"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Modelo excelente"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Un AUC cercano a 1 indica alta calidad."
+            },
+            {
+                "id": 26,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué métrica se usa en regresión?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "MSE"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "MAE"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "R²"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son métricas de regresión."
+            },
+            {
+                "id": 27,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide el índice de silueta?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Clasificación"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Clustering"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Regresión"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Evalúa calidad del clustering."
+            },
+            {
+                "id": 28,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es el overfitting?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Modelo demasiado simple"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Modelo demasiado complejo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Modelo sin datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El modelo memoriza los datos."
+            },
+            {
+                "id": 29,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica ayuda a evitar overfitting?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Regularización"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Dropout"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Early stopping"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores son correctas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas ayudan a generalizar mejor."
+            },
+            {
+                "id": 30,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica divide datos en K partes?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grid Search"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "K-fold"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Random Search"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna de las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "K-fold cross-validation."
+            },
+            {
+                "id": 31,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué método prueba combinaciones exhaustivas?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Random Search"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Grid Search"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Bayesian"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Grid Search evalúa todas las combinaciones."
+            },
+            {
+                "id": 32,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica usa probabilidades para optimizar?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grid Search"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Random Search"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Bayesian Optimization"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Bayesian usa modelos probabilísticos."
+            },
+            {
+                "id": 33,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es pruning?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Reducir tamaño del modelo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Aumentar datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Cambiar etiquetas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Elimina partes innecesarias del modelo."
+            },
+            {
+                "id": 34,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué formato se usa para modelos portables?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "ONNX"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "HDF5"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Joblib"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todos son formatos de almacenamiento."
+            },
+            {
+                "id": 35,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hardware acelera ML?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "GPU"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "TPU"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "CPU"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todos pueden usarse."
+            },
+            {
+                "id": 36,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué permite el despliegue?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Usar el modelo en producción"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Entrenar el modelo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Se usa en entornos reales."
+            },
+            {
+                "id": 37,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es MLOps?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Gestión del ciclo de vida ML"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Solo entrenamiento"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Solo despliegue"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "MLOps integra todo el ciclo."
+            },
+            {
+                "id": 38,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta es para versionado?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Git"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "DVC"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "MLflow"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas gestionan versiones."
+            },
+            {
+                "id": 39,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta es para contenedores?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Docker"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Kubernetes"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Jenkins"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas intervienen en CI/CD."
+            },
+            {
+                "id": 40,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué herramienta monitoriza métricas?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Grafana"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Prometheus"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Kibana"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son herramientas de monitorización."
+            },
+            {
+                "id": 41,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es Scikit-learn?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Framework ML"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Lenguaje"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Sistema operativo"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Es una librería de ML."
+            },
+            {
+                "id": 42,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué librería es de deep learning?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "TensorFlow"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "PyTorch"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Keras"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas las anteriores"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas son librerías de deep learning."
+            },
+            {
+                "id": 43,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es underfitting?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Modelo complejo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Modelo simple"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Modelo perfecto"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "No captura patrones."
+            },
+            {
+                "id": 44,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica evita entrenamiento excesivo?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Early stopping"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Dropout"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Regularización"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Todas"
+                    }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "Todas ayudan."
+            },
+            {
+                "id": 45,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es la curva ROC?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Relación TP-FP"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Curva de error"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Curva de pérdida"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Mide rendimiento binario."
+            },
+            {
+                "id": 46,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide recall?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Verdaderos positivos detectados"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Errores totales"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Precisión"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Recall mide cobertura."
+            },
+            {
+                "id": 47,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide precision?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Exactitud de positivos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Errores"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Recall"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Precision mide exactitud."
+            },
+            {
+                "id": 48,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué tipo de modelo usa etiquetas?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Supervisado"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "No supervisado"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Clustering"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "Usa datos etiquetados."
+            },
+            {
+                "id": 49,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es clustering?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Clasificación supervisada"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Agrupación de datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Regresión"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Agrupa datos similares."
+            },
+            {
+                "id": 50,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué fase incluye monitorización del modelo?",
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Entrenamiento"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Despliegue"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "EDA"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Ninguna"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Se monitoriza en producción."
+            }
+        ]
+    }
+}
