@@ -445,26 +445,5 @@ function setupAnswerListeners() {
     });
 }
 
-// Iniciar aplicación e interactividad extra
-document.addEventListener('DOMContentLoaded', () => {
-    loadExamList();
-
-    const pkmnBtn = document.getElementById('pokemon-toggle-btn');
-    if(pkmnBtn) {
-        if(localStorage.getItem('pokemonTheme') === 'true') {
-            document.body.classList.add('pokemon-theme');
-            pkmnBtn.textContent = '⚪';
-        }
-        
-        pkmnBtn.addEventListener('click', () => {
-            const isActive = document.body.classList.toggle('pokemon-theme');
-            pkmnBtn.textContent = isActive ? '⚪' : '🔴';
-            localStorage.setItem('pokemonTheme', isActive);
-            
-            pkmnBtn.style.transform = 'scale(0.8) rotate(180deg)';
-            setTimeout(() => {
-                pkmnBtn.style.transform = 'scale(1) rotate(0deg)';
-            }, 200);
-        });
-    }
-});
+// Iniciar aplicación
+document.addEventListener('DOMContentLoaded', loadExamList);
