@@ -18,5 +18,10 @@
     "id": "quiz-004",
     "titulo": "CHATGPT: Selección de algoritmos y proceso de aprendizaje automático",
     "archivo": "examen4.json"
+  },
+  {
+    "id": "quiz-005",
+    "titulo": "Sistemas de Aprendizaje Automático: Tema 3",
+    "archivo": "tema3.json"
   }
 ]

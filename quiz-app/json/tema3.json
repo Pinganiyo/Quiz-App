@@ -1,0 +1,145 @@
+{
+  "examen": {
+    "titulo": "Sistemas de Aprendizaje Automático: Tema 3",
+    "descripcion": "Selección de algoritmos, preprocesamiento de datos, y proceso completo de entrenamiento, optimización y despliegue del modelo.",
+    "configuracion": {
+      "tiempo_limite_minutos": 15,
+      "puntuacion_minima_aprobado": 70,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "q1",
+        "tipo": "unica_respuesta",
+        "enunciado": "Según el temario, ¿qué porcentaje del éxito de un modelo de machine learning depende de los datos?",
+        "opciones": [
+          { "id": "a", "texto": "50%" },
+          { "id": "b", "texto": "60%" },
+          { "id": "c", "texto": "80%" },
+          { "id": "d", "texto": "99%" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "El 80% del éxito de un modelo depende de los datos. Esta es una regla general en Data Science."
+      },
+      {
+        "id": "q2",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué método de escalado se recomienda cuando queremos reducir la sensibilidad a outliers de nuestros datos?",
+        "opciones": [
+          { "id": "a", "texto": "Min-Max Scaling" },
+          { "id": "b", "texto": "Robust Scaling" },
+          { "id": "c", "texto": "Z-score" },
+          { "id": "d", "texto": "Log normalization" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El Robust Scaling es menos sensible a los outliers en comparación con técnicas como Min-Max Scaling."
+      },
+      {
+        "id": "q3",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Identifica cuáles de las siguientes métricas son propias de un problema de Clasificación Binaria:",
+        "opciones": [
+          { "id": "a", "texto": "Accuracy" },
+          { "id": "b", "texto": "MSE" },
+          { "id": "c", "texto": "Precision" },
+          { "id": "d", "texto": "Índice de silueta" }
+        ],
+        "respuesta_correcta": ["a", "c"],
+        "explicacion": "Accuracy, Precision, Recall y F1-score se usan en clasificación binaria, mientras que MSE es de regresión y el índice de silueta de clustering."
+      },
+      {
+        "id": "q4",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué técnica de regularización es conocida también como L1?",
+        "opciones": [
+          { "id": "a", "texto": "Ridge" },
+          { "id": "b", "texto": "Elastic Net" },
+          { "id": "c", "texto": "Lasso" },
+          { "id": "d", "texto": "Dropout" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "La regularización L1 se conoce como Lasso, mientras que L2 es Ridge."
+      },
+      {
+        "id": "q5",
+        "tipo": "unica_respuesta",
+        "enunciado": "Si tu modelo es demasiado complejo y se ajusta excesivamente a los datos de entrenamiento, ¿qué problema estás experimentando?",
+        "opciones": [
+          { "id": "a", "texto": "Underfitting" },
+          { "id": "b", "texto": "Overfitting" },
+          { "id": "c", "texto": "Data Leakage" },
+          { "id": "d", "texto": "Outliers" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El overfitting ocurre cuando un modelo es demasiado complejo y memoriza los datos en lugar de aprender el patrón."
+      },
+      {
+        "id": "q6",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Qué técnicas se mencionan como métodos de reducción de dimensionalidad en el temario?",
+        "opciones": [
+          { "id": "a", "texto": "PCA" },
+          { "id": "b", "texto": "Label encoding" },
+          { "id": "c", "texto": "t-SNE" },
+          { "id": "d", "texto": "LDA" }
+        ],
+        "respuesta_correcta": ["a", "c", "d"],
+        "explicacion": "Los métodos listados para reducción de dimensionalidad son PCA, LDA y t-SNE. Label encoding se usa para manejar variables categóricas."
+      },
+      {
+        "id": "q7",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Cuál suele ser la proporción típica recomendada para la división de los datos en el conjunto de Entrenamiento (Training) según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "40-50%" },
+          { "id": "b", "texto": "50-60%" },
+          { "id": "c", "texto": "60-70%" },
+          { "id": "d", "texto": "70-90%" }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "El temario recomienda dividir el dataset usando entre un 70% y un 90% para Training."
+      },
+      {
+        "id": "q8",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de los siguientes son métodos para la 'compresión' de un modelo ML?",
+        "opciones": [
+          { "id": "a", "texto": "Huffman" },
+          { "id": "b", "texto": "ONNX" },
+          { "id": "c", "texto": "Pickle / Joblib" },
+          { "id": "d", "texto": "Random Search" }
+        ],
+        "respuesta_correcta": ["a", "b", "c"],
+        "explicacion": "El temario incluye Huffman, Pickle/Joblib, HDF5 y ONNX como métodos de compresión; Random Search es para ajuste de hiperparámetros."
+      },
+      {
+        "id": "q9",
+        "tipo": "unica_respuesta",
+        "enunciado": "En la evaluación de métricas de Regresión, ¿por qué término están formadas las siglas MSE?",
+        "opciones": [
+          { "id": "a", "texto": "Mean Squared Error" },
+          { "id": "b", "texto": "Maximum Standard Estimate" },
+          { "id": "c", "texto": "Mean Sample Evaluation" },
+          { "id": "d", "texto": "Median Squared Error" }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "MSE significa Mean Squared Error, una métrica clave en los modelos de regresión."
+      },
+      {
+        "id": "q10",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de las siguientes herramientas se indican como sistemas de Control de Versiones en MLOps?",
+        "opciones": [
+          { "id": "a", "texto": "Git" },
+          { "id": "b", "texto": "Jenkins" },
+          { "id": "c", "texto": "Docker" },
+          { "id": "d", "texto": "DVC" },
+          { "id": "e", "texto": "MLflow" }
+        ],
+        "respuesta_correcta": ["a", "d", "e"],
+        "explicacion": "Git, DVC, y MLflow se utilizan para control de versiones de código y modelos en MLOps. Jenkins es CI/CD y Docker es containerización."
+      }
+    ]
+  }
+}
