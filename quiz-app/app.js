@@ -226,15 +226,36 @@ function renderQuestions() {
             if (userAnswers.length === 0) return;
             
             let isCorrect = false;
+            let partialScore = 0;
+            let statusText = '';
+            
             if (q.tipo === 'seleccion_multiple') {
                 const correctAnswers = q.respuesta_correcta;
-                if (userAnswers.length === correctAnswers.length && 
-                    userAnswers.every(val => correctAnswers.includes(val))) {
+                let hits = 0;
+                let mistakes = 0;
+                userAnswers.forEach(ans => {
+                    if (correctAnswers.includes(ans)) hits++;
+                    else mistakes++;
+                });
+                
+                partialScore = (hits - mistakes) / correctAnswers.length;
+                if (partialScore < 0) partialScore = 0;
+                
+                if (partialScore === 1) {
                     isCorrect = true;
+                    statusText = '✅ Correcto';
+                } else if (partialScore > 0) {
+                    statusText = `⚠️ Parcialmente Correcto (${Math.round(partialScore * 100)}%)`;
+                } else {
+                    statusText = '❌ Incorrecto';
                 }
             } else {
                 if (userAnswers.length > 0 && userAnswers[0] === q.respuesta_correcta) {
                     isCorrect = true;
+                    partialScore = 1;
+                    statusText = '✅ Correcto';
+                } else {
+                    statusText = '❌ Incorrecto';
                 }
             }
 
@@ -252,12 +273,14 @@ function renderQuestions() {
                 correctText = correctOpt ? correctOpt.texto : '';
             }
 
+            const showCorrect = !isCorrect;
+
             feedbackDiv.style.display = 'block';
             feedbackDiv.innerHTML = `
-                <div class="feedback-item ${isCorrect ? 'correct' : ''}" style="margin-bottom: 0; padding: 1rem;">
+                <div class="feedback-item ${isCorrect ? 'correct' : ''}" style="margin-bottom: 0; padding: 1rem; ${partialScore > 0 && !isCorrect ? 'border-left: 5px solid #f59e0b;' : ''}">
                     <p class="feedback-explanation">
-                        <strong>${isCorrect ? '✅ Correcto' : '❌ Incorrecto'}</strong>
-                        ${!isCorrect ? `<br><strong style="color: var(--success-color);">Respuesta correcta:</strong> ${correctText}` : ''}
+                        <strong>${statusText}</strong>
+                        ${showCorrect ? `<br><strong style="color: var(--success-color);">Respuesta esperada:</strong> ${correctText}` : ''}
                         <br><br>
                         <em>${q.explicacion || ''}</em>
                     </p>
@@ -297,20 +320,40 @@ function submitExam() {
         const userAnswers = Array.from(checkedInputs).map(input => input.value);
         
         let isCorrect = false;
+        let partialScore = 0;
+        let statusText = '';
         
         if (q.tipo === 'seleccion_multiple') {
             const correctAnswers = q.respuesta_correcta;
-            if (userAnswers.length === correctAnswers.length && 
-                userAnswers.every(val => correctAnswers.includes(val))) {
+            let hits = 0;
+            let mistakes = 0;
+            userAnswers.forEach(ans => {
+                if (correctAnswers.includes(ans)) hits++;
+                else mistakes++;
+            });
+            
+            partialScore = (hits - mistakes) / correctAnswers.length;
+            if (partialScore < 0) partialScore = 0;
+            
+            if (partialScore === 1) {
                 isCorrect = true;
+                statusText = '✅ Correcto';
+            } else if (partialScore > 0) {
+                statusText = `⚠️ Parcialmente Correcto (${Math.round(partialScore * 100)}%)`;
+            } else {
+                statusText = '❌ Incorrecto';
             }
         } else {
             if (userAnswers.length > 0 && userAnswers[0] === q.respuesta_correcta) {
                 isCorrect = true;
+                partialScore = 1;
+                statusText = '✅ Correcto';
+            } else {
+                statusText = '❌ Incorrecto';
             }
         }
         
-        if (isCorrect) score++;
+        score += partialScore;
         
         if (examData.configuracion.mostrar_retroalimentacion) {
             let userText = 'Ninguna';
@@ -319,35 +362,28 @@ function submitExam() {
                 userText = userOpts.join(', ');
             }
 
-            let extraInfo = '';
-            if (!isCorrect) {
-                let correctText = '';
-                if (q.tipo === 'seleccion_multiple') {
-                    const correctOpts = q.opciones.filter(opt => q.respuesta_correcta.includes(opt.id)).map(opt => opt.texto);
-                    correctText = correctOpts.join(', ');
-                } else {
-                    const correctOpt = q.opciones.find(opt => opt.id === q.respuesta_correcta);
-                    correctText = correctOpt ? correctOpt.texto : '';
-                }
-
-                extraInfo = `
-                    <br><br>
-                    <strong style="color: var(--error-color);">Tu respuesta:</strong> ${userText}
-                    <br>
-                    <strong style="color: var(--success-color);">Respuesta correcta:</strong> ${correctText}
-                `;
+            let correctText = '';
+            if (q.tipo === 'seleccion_multiple') {
+                const correctOpts = q.opciones.filter(opt => q.respuesta_correcta.includes(opt.id)).map(opt => opt.texto);
+                correctText = correctOpts.join(', ');
             } else {
-                extraInfo = `
-                    <br><br>
-                    <strong style="color: var(--success-color);">Tu respuesta:</strong> ${userText}
-                `;
+                const correctOpt = q.opciones.find(opt => opt.id === q.respuesta_correcta);
+                correctText = correctOpt ? correctOpt.texto : '';
             }
 
+            const showCorrect = !isCorrect;
+
+            let extraInfo = `
+                <br><br>
+                <strong style="color: rgba(255, 255, 255, 0.7);">Tu respuesta:</strong> ${userText}
+                ${showCorrect ? `<br><strong style="color: var(--success-color);">Respuesta esperada:</strong> ${correctText}` : ''}
+            `;
+
             feedbackHTML += `
-                <div class="feedback-item ${isCorrect ? 'correct' : ''}">
+                <div class="feedback-item ${isCorrect ? 'correct' : ''}" style="${partialScore > 0 && !isCorrect ? 'border-left: 5px solid #f59e0b;' : ''}">
                     <p class="feedback-question">${q.enunciado}</p>
                     <p class="feedback-explanation">
-                        <strong>${isCorrect ? '✅ Correcto' : '❌ Incorrecto'}</strong>${extraInfo}
+                        <strong>${statusText}</strong>${extraInfo}
                         <br><br>
                         <em>${q.explicacion}</em>
                     </p>

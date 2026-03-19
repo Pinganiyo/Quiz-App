@@ -1,0 +1,274 @@
+{
+  "examen": {
+    "titulo": "Sistemas de Aprendizaje Automático: Tema 3 (Extenso)",
+    "descripcion": "20 preguntas de opción única basadas en todo el contenido del Tema 3.",
+    "configuracion": {
+      "tiempo_limite_minutos": 25,
+      "puntuacion_minima_aprobado": 70,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "q1",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué porcentaje del éxito de un modelo depende de los datos según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "40%" },
+          { "id": "b", "texto": "60%" },
+          { "id": "c", "texto": "80%" },
+          { "id": "d", "texto": "90%" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "El 80% del éxito de un modelo se atribuye a los datos y su preprocesamiento."
+      },
+      {
+        "id": "q2",
+        "tipo": "unica_respuesta",
+        "enunciado": "En el planteamiento del problema, ¿cuándo se utiliza el aprendizaje supervisado?",
+        "opciones": [
+          { "id": "a", "texto": "Cuando se pueden observar patrones sin etiquetas" },
+          { "id": "b", "texto": "Cuando existe relación entre datos y etiquetas" },
+          { "id": "c", "texto": "Cuando el problema no puede resolverse con IA" },
+          { "id": "d", "texto": "Exclusivamente para clustering" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El aprendizaje supervisado ocurre cuando se conoce la relación entre los datos (features) y las etiquetas (target)."
+      },
+      {
+        "id": "q3",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿A qué se refiere el término EDA en el contexto de Data Science?",
+        "opciones": [
+          { "id": "a", "texto": "Explicación de Datos Algorítmicos" },
+          { "id": "b", "texto": "Análisis Exploratorio de Datos" },
+          { "id": "c", "texto": "Entrenamiento de Datos Aleatorios" },
+          { "id": "d", "texto": "Extracción de Datos Automática" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "EDA significa Análisis Exploratorio de Datos (Exploratory Data Analysis)."
+      },
+      {
+        "id": "q4",
+        "tipo": "unica_respuesta",
+        "enunciado": "La arquitectura 'medallón' divide los datos en tres capas. ¿Cuáles son?",
+        "opciones": [
+          { "id": "a", "texto": "Bronze, Silver, Gold" },
+          { "id": "b", "texto": "Raw, Processed, Analyzed" },
+          { "id": "c", "texto": "One, Two, Three" },
+          { "id": "d", "texto": "Input, Hidden, Output" }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "El temario menciona las capas Bronze, Silver y Gold para la arquitectura medallón de datos."
+      },
+      {
+        "id": "q5",
+        "tipo": "unica_respuesta",
+        "enunciado": "Si deseas imputar valores numéricos faltantes en la limpieza de datos, ¿qué técnica básica menciona el temario?",
+        "opciones": [
+          { "id": "a", "texto": "Elastic Net" },
+          { "id": "b", "texto": "PCA" },
+          { "id": "c", "texto": "Media o KNN" },
+          { "id": "d", "texto": "Label Encoding" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Para imputar valores faltantes, el temario menciona métodos como rellenar con la media o usar algoritmos como KNN."
+      },
+      {
+        "id": "q6",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué gráfico estadístico se recomienda específicamente para visualizar la dispersión y la presencia de outliers?",
+        "opciones": [
+          { "id": "a", "texto": "Pie (Pastel)" },
+          { "id": "b", "texto": "Line (Líneas)" },
+          { "id": "c", "texto": "Boxplot (Cajas)" },
+          { "id": "d", "texto": "Histogram (Histograma)" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "El Boxplot es la herramienta visual recomendada para estudiar la dispersión y los outliers."
+      },
+      {
+        "id": "q7",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué técnica de escalado transforma los datos para que tengan media 0 y desviación estándar 1?",
+        "opciones": [
+          { "id": "a", "texto": "Min-Max Scaling" },
+          { "id": "b", "texto": "Z-score" },
+          { "id": "c", "texto": "Log normalization" },
+          { "id": "d", "texto": "Robust Scaling" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Z-score (o estandarización) logra exactamente media 0 y varianza 1."
+      },
+      {
+        "id": "q8",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Cuál de las siguientes es una técnica de Codificación de variables categóricas?",
+        "opciones": [
+          { "id": "a", "texto": "Grid Search" },
+          { "id": "b", "texto": "One-hot encoding" },
+          { "id": "c", "texto": "Cross-validation" },
+          { "id": "d", "texto": "Z-score" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "One-hot encoding, Label encoding y Target encoding son métodos de transformación categórica."
+      },
+      {
+        "id": "q9",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Cómo se llama el proceso de crear nuevas variables a partir de datos existentes (e.g. extraer día de la semana de una fecha)?",
+        "opciones": [
+          { "id": "a", "texto": "Feature Engineering" },
+          { "id": "b", "texto": "Data Leakage" },
+          { "id": "c", "texto": "Overfitting" },
+          { "id": "d", "texto": "Reducción de dimensionalidad" }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "Feature Engineering se refiere a la ingeniería o extracción de características útiles a partir de los datos crudos."
+      },
+      {
+        "id": "q10",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Cuál de estos algoritmos pertenece a la categoría de Reducción de Dimensionalidad?",
+        "opciones": [
+          { "id": "a", "texto": "KNN" },
+          { "id": "b", "texto": "PCA" },
+          { "id": "c", "texto": "Lasso" },
+          { "id": "d", "texto": "Random Search" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El Análisis de Componentes Principales (PCA) es un modelo de reducción de dimensionalidad."
+      },
+      {
+        "id": "q11",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué proporción del dataset se destina típicamente a Validation o Test según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "30-40%" },
+          { "id": "b", "texto": "5-10%" },
+          { "id": "c", "texto": "70-90%" },
+          { "id": "d", "texto": "Nula, todo va a Training" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El temario plantea Training al 70-90% y Validation/Test entre un 5% y un 10% cada uno."
+      },
+      {
+        "id": "q12",
+        "tipo": "unica_respuesta",
+        "enunciado": "En Clasificación Binaria, ¿de qué se compone principalmente la Matriz de Confusión?",
+        "opciones": [
+          { "id": "a", "texto": "MSE, MAE, R2" },
+          { "id": "b", "texto": "TP, TN, FP, FN" },
+          { "id": "c", "texto": "Silhouette, Dunn" },
+          { "id": "d", "texto": "L1, L2, Elastic Net" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "La matriz se compone de Verdaderos Positivos, Verdaderos Negativos, Falsos Positivos y Falsos Negativos."
+      },
+      {
+        "id": "q13",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué representa el eje Y en una Curva ROC?",
+        "opciones": [
+          { "id": "a", "texto": "Falsos Positivos (FP)" },
+          { "id": "b", "texto": "Verdaderos Negativos (TN)" },
+          { "id": "c", "texto": "Verdaderos Positivos (TP)" },
+          { "id": "d", "texto": "Falsos Negativos (FN)" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "En la curva ROC, el Eje X representa la tasa de FP y el Eje Y la de TP."
+      },
+      {
+        "id": "q14",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué métrica es útil en regresión e indica el coeficiente de determinación (varianza explicada del modelo)?",
+        "opciones": [
+          { "id": "a", "texto": "Accuracy" },
+          { "id": "b", "texto": "MSE" },
+          { "id": "c", "texto": "MAE" },
+          { "id": "d", "texto": "R²" }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "R² (R-cuadrado) es el coeficiente de determinación aplicable a problemas de regresión."
+      },
+      {
+        "id": "q15",
+        "tipo": "unica_respuesta",
+        "enunciado": "Si queremos medir la calidad de un modelo de Clustering (No supervisado), ¿cuál de estos índices podemos usar?",
+        "opciones": [
+          { "id": "a", "texto": "Índice de Silueta" },
+          { "id": "b", "texto": "AUC" },
+          { "id": "c", "texto": "Precision" },
+          { "id": "d", "texto": "F1-score" }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "El de Silueta evalúa la cohesión interna y separación de los clusters formados por el modelo."
+      },
+      {
+        "id": "q16",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué nombre recibe la regularización L2?",
+        "opciones": [
+          { "id": "a", "texto": "Lasso" },
+          { "id": "b", "texto": "Ridge" },
+          { "id": "c", "texto": "Elastic Net" },
+          { "id": "d", "texto": "Dropout" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "L2 se conoce como Ridge, penalizando a los coeficientes elevándolos al cuadrado."
+      },
+      {
+        "id": "q17",
+        "tipo": "unica_respuesta",
+        "enunciado": "Cuando hablamos de Dropout o Early Stopping en el temario, ¿a qué categoría de técnicas pertenecen?",
+        "opciones": [
+          { "id": "a", "texto": "Ingeniería de Características" },
+          { "id": "b", "texto": "Regularización y mejora del modelo" },
+          { "id": "c", "texto": "Reducción de dimensionalidad" },
+          { "id": "d", "texto": "Escalado y Normalización" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Ambas son técnicas usadas para regularizar el modelo y prevenir el overfitting durante su entrenamiento."
+      },
+      {
+        "id": "q18",
+        "tipo": "unica_respuesta",
+        "enunciado": "Bayesian Optimization ¿en qué fase del proceso de ML se ubica típicamente según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "Limpieza de datos" },
+          { "id": "b", "texto": "Ajuste de hiperparámetros" },
+          { "id": "c", "texto": "Monitorización" },
+          { "id": "d", "texto": "Extracción de características" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Es un método junto con Grid Search y Random Search usado para el ajuste automático y eficiente de hiperparámetros."
+      },
+      {
+        "id": "q19",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué utilidad tienen Pickle, Joblib u ONNX en la fase final de Machine Learning?",
+        "opciones": [
+          { "id": "a", "texto": "Control de Versiones (MLOps)" },
+          { "id": "b", "texto": "Codificación de variables" },
+          { "id": "c", "texto": "Optimización y compresión del modelo para guardarlo" },
+          { "id": "d", "texto": "APIs web de predicción en tiempo real" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Son formatos y librerías utilizados comúnmente en Python para la serialización y compresión óptima de modelos entrenados."
+      },
+      {
+        "id": "q20",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué herramientas se mencionan específicamente para la 'Monitorización' en MLOps?",
+        "opciones": [
+          { "id": "a", "texto": "Git, DVC, MLflow" },
+          { "id": "b", "texto": "Docker, Kubernetes, Jenkins" },
+          { "id": "c", "texto": "Scikit-learn, PyTorch, Keras" },
+          { "id": "d", "texto": "Grafana, Kibana, Prometheus" }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "Grafana, Kibana y Prometheus son los sistemas indicados en el temario para la monitorización de sistemas MLOps en producción."
+      }
+    ]
+  }
+}
