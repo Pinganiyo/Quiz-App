@@ -248,12 +248,38 @@ function submitExam() {
         if (isCorrect) score++;
         
         if (examData.configuracion.mostrar_retroalimentacion) {
+            let extraInfo = '';
+            if (!isCorrect) {
+                let userText = 'Ninguna';
+                if (userAnswers.length > 0) {
+                    const userOpts = q.opciones.filter(opt => userAnswers.includes(opt.id)).map(opt => opt.texto);
+                    userText = userOpts.join(', ');
+                }
+
+                let correctText = '';
+                if (q.tipo === 'seleccion_multiple') {
+                    const correctOpts = q.opciones.filter(opt => q.respuesta_correcta.includes(opt.id)).map(opt => opt.texto);
+                    correctText = correctOpts.join(', ');
+                } else {
+                    const correctOpt = q.opciones.find(opt => opt.id === q.respuesta_correcta);
+                    correctText = correctOpt ? correctOpt.texto : '';
+                }
+
+                extraInfo = `
+                    <br><br>
+                    <strong style="color: var(--error-color);">Tu respuesta:</strong> ${userText}
+                    <br>
+                    <strong style="color: var(--success-color);">Respuesta correcta:</strong> ${correctText}
+                `;
+            }
+
             feedbackHTML += `
                 <div class="feedback-item ${isCorrect ? 'correct' : ''}">
                     <p class="feedback-question">${q.enunciado}</p>
                     <p class="feedback-explanation">
-                        <strong>${isCorrect ? '✅ Correcto' : '❌ Incorrecto'}</strong>. 
-                        ${q.explicacion}
+                        <strong>${isCorrect ? '✅ Correcto' : '❌ Incorrecto'}</strong>${extraInfo}
+                        <br><br>
+                        <em>${q.explicacion}</em>
                     </p>
                 </div>
             `;
