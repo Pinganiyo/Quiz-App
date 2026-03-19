@@ -241,6 +241,25 @@ p {
     accent-color: var(--accent-color);
 }
 
+.option-label:has(input:disabled) {
+    cursor: default;
+    opacity: 0.7;
+}
+
+.option-label:has(input:disabled):hover {
+    background: rgba(0, 0, 0, 0.3); /* reset hover */
+    border-color: transparent;
+}
+
+.option-label:has(input:checked:disabled) {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--accent-color);
+}
+
+.option-input:disabled {
+    cursor: default;
+}
+
 .exam-footer {
     display: flex;
     justify-content: flex-end;

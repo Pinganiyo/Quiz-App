@@ -206,6 +206,68 @@ function renderQuestions() {
         });
         
         qCard.appendChild(optionsGrid);
+        
+        // Botón de validación individual
+        const validateBtn = document.createElement('button');
+        validateBtn.type = 'button';
+        validateBtn.className = 'btn secondary-btn validate-btn';
+        validateBtn.textContent = 'Validar';
+        validateBtn.style.marginTop = '1rem';
+        validateBtn.style.padding = '0.5rem 1rem';
+        validateBtn.style.fontSize = '0.9rem';
+        
+        const feedbackDiv = document.createElement('div');
+        feedbackDiv.className = 'inline-feedback';
+        feedbackDiv.style.marginTop = '1rem';
+        feedbackDiv.style.display = 'none';
+
+        validateBtn.addEventListener('click', () => {
+            const userAnswers = Array.from(qCard.querySelectorAll('input:checked')).map(input => input.value);
+            if (userAnswers.length === 0) return;
+            
+            let isCorrect = false;
+            if (q.tipo === 'seleccion_multiple') {
+                const correctAnswers = q.respuesta_correcta;
+                if (userAnswers.length === correctAnswers.length && 
+                    userAnswers.every(val => correctAnswers.includes(val))) {
+                    isCorrect = true;
+                }
+            } else {
+                if (userAnswers.length > 0 && userAnswers[0] === q.respuesta_correcta) {
+                    isCorrect = true;
+                }
+            }
+
+            const allInputs = qCard.querySelectorAll('input');
+            allInputs.forEach(input => input.disabled = true);
+            validateBtn.disabled = true;
+            validateBtn.style.opacity = '0.5';
+
+            let correctText = '';
+            if (q.tipo === 'seleccion_multiple') {
+                const correctOpts = q.opciones.filter(opt => q.respuesta_correcta.includes(opt.id)).map(opt => opt.texto);
+                correctText = correctOpts.join(', ');
+            } else {
+                const correctOpt = q.opciones.find(opt => opt.id === q.respuesta_correcta);
+                correctText = correctOpt ? correctOpt.texto : '';
+            }
+
+            feedbackDiv.style.display = 'block';
+            feedbackDiv.innerHTML = `
+                <div class="feedback-item ${isCorrect ? 'correct' : ''}" style="margin-bottom: 0; padding: 1rem;">
+                    <p class="feedback-explanation">
+                        <strong>${isCorrect ? '✅ Correcto' : '❌ Incorrecto'}</strong>
+                        ${!isCorrect ? `<br><strong style="color: var(--success-color);">Respuesta correcta:</strong> ${correctText}` : ''}
+                        <br><br>
+                        <em>${q.explicacion || ''}</em>
+                    </p>
+                </div>
+            `;
+        });
+
+        qCard.appendChild(validateBtn);
+        qCard.appendChild(feedbackDiv);
+        
         container.appendChild(qCard);
     });
     
