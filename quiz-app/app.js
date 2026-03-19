@@ -292,7 +292,10 @@ function submitExam() {
     const formData = new FormData(document.getElementById('exam-form'));
     
     examData.preguntas.forEach(q => {
-        const userAnswers = formData.getAll(`question-${q.id}`);
+        // Leer directamente del DOM para capturar también los inputs deshabilitados (validados)
+        const checkedInputs = document.querySelectorAll(`input[name="question-${q.id}"]:checked`);
+        const userAnswers = Array.from(checkedInputs).map(input => input.value);
+        
         let isCorrect = false;
         
         if (q.tipo === 'seleccion_multiple') {
