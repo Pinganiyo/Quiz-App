@@ -1,0 +1,535 @@
+{
+    "examen": {
+        "id": "quiz-001",
+        "titulo": "Examen Tema 4 - Redes Neuronales e IA Generativa",
+        "descripcion": "Evaluación tipo test sobre redes neuronales, entrenamiento, tipos de redes e IA generativa.",
+        "configuracion": {
+            "tiempo_limite_minutos": 30,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es la función principal de la capa de entrada en una red neuronal?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aplicar funciones de activación"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Recibir y distribuir los datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcular el error"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Actualizar los pesos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La capa de entrada solo recibe los datos y los distribuye al resto de la red."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué elemento permite introducir flexibilidad en el modelo y mejorar la generalización?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pesos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Bias (sesgo)"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Inputs"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Output"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El bias permite ajustar el modelo independientemente de los inputs."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de las siguientes funciones de activación devuelve valores entre 0 y 1?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "ReLU"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "tanh"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Sigmoide"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Softmax"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La función sigmoide tiene un rango de salida entre 0 y 1."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace la función Softmax?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Devuelve valores negativos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Normaliza valores en probabilidades que suman 1"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Elimina valores negativos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Reduce dimensionalidad"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Softmax convierte los valores en probabilidades que suman 1."
+            },
+            {
+                "id": 5,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el objetivo principal del entrenamiento de una red neuronal?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aumentar el número de neuronas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Minimizar el error"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Reducir el número de capas"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Eliminar el bias"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El objetivo es minimizar la función de pérdida."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué ocurre en la fase de forward propagation?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Se ajustan los pesos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Se calcula el error"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Se obtiene la predicción"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Se eliminan neuronas"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "En forward propagation se calcula la salida del modelo."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué algoritmo se utiliza para ajustar los pesos según el error?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Forward propagation"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Backpropagation"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Pooling"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Encoding"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Backpropagation ajusta los parámetros en función del error."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide la función de pérdida?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "El número de capas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "La diferencia entre predicción y valor real"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La velocidad de entrenamiento"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El número de neuronas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La función de pérdida mide el error del modelo."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema ocurre cuando los gradientes son muy pequeños?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Overfitting"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Exploding gradient"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Vanishing gradient"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Underfitting"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El vanishing gradient provoca aprendizaje muy lento."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica ayuda a evitar el overfitting?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aumentar capas"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Dropout"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Reducir epochs a 0"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Dropout desactiva neuronas aleatoriamente durante el entrenamiento."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué tipo de red es más adecuada para imágenes?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "RNN"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "CNN"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "FNN"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Autoencoder"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las CNN están diseñadas para procesar imágenes."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el pooling en una CNN?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aumentar dimensiones"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reducir dimensiones"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcular gradientes"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Aplicar activación"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El pooling reduce el tamaño del mapa de características."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué tipo de red es adecuada para datos secuenciales?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "CNN"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "FNN"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "RNN"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Autoencoder"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Las RNN están diseñadas para secuencias."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué elemento proporciona memoria en una RNN?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Pooling"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Estado oculto"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Bias"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Input"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El estado oculto guarda información de pasos anteriores."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el objetivo de un autoencoder?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Clasificar datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reducir y reconstruir datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aumentar datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Eliminar ruido completamente"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El autoencoder comprime y reconstruye los datos."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué indica un error de reconstrucción alto en un autoencoder?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Dato normal"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Error del modelo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Anomalía"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Overfitting"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Un error alto indica que el dato es diferente (anomalía)."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué caracteriza a la IA generativa?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Solo clasifica datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Genera contenido nuevo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "No usa datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Solo trabaja con números"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La IA generativa crea contenido como texto o imágenes."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es el zero-shot learning?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aprender sin datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Resolver tareas no entrenadas explícitamente"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar errores"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Reducir parámetros"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Permite realizar tareas sin entrenamiento específico."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es un prompt en un LLM?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "La salida del modelo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "El error del modelo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "La entrada en lenguaje natural"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "El dataset"
+                    }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El prompt es la instrucción o texto de entrada."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál es el objetivo del prompt engineering?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Reducir el tamaño del modelo"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Diseñar mejores instrucciones para obtener mejores respuestas"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Aumentar capas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "El prompt engineering busca optimizar las respuestas del modelo."
+            }
+        ]
+    }
+}

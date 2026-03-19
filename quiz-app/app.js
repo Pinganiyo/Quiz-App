@@ -44,15 +44,63 @@ async function loadExamList() {
         const listContainer = document.getElementById('exams-list');
         listContainer.innerHTML = '';
         
+        const groupedExams = {};
         exams.forEach(exam => {
-            const btn = document.createElement('button');
-            btn.className = 'btn secondary-btn';
-            btn.style.textAlign = 'left';
-            btn.style.padding = '1.25rem';
-            btn.innerHTML = `<strong>${exam.titulo}</strong><br><span style="opacity:0.7; font-size: 0.85em;">Archivo: ${exam.archivo}</span>`;
-            btn.addEventListener('click', () => loadSpecificExam(exam.archivo));
-            listContainer.appendChild(btn);
+            const parts = exam.archivo.split('/');
+            const folder = parts.length > 1 ? parts[0] : 'General';
+            
+            if (!groupedExams[folder]) {
+                groupedExams[folder] = [];
+            }
+            groupedExams[folder].push(exam);
         });
+        
+        for (const [folder, folderExams] of Object.entries(groupedExams)) {
+            // Folder Button
+            const folderBtn = document.createElement('button');
+            folderBtn.className = 'btn primary-btn';
+            folderBtn.style.marginTop = '1rem';
+            folderBtn.style.marginBottom = '0.5rem';
+            folderBtn.style.width = '100%';
+            folderBtn.style.textAlign = 'left';
+            folderBtn.style.fontWeight = 'bold';
+            folderBtn.style.display = 'flex';
+            folderBtn.style.justifyContent = 'space-between';
+            folderBtn.style.alignItems = 'center';
+            folderBtn.style.padding = '1rem';
+            folderBtn.innerHTML = `<span>📁 ${folder.toUpperCase()}</span> <span>▼</span>`;
+            
+            listContainer.appendChild(folderBtn);
+            
+            // Container for exams in this folder
+            const folderContent = document.createElement('div');
+            folderContent.style.display = 'none';
+            folderContent.style.flexDirection = 'column';
+            folderContent.style.gap = '1rem';
+            folderContent.style.width = '100%';
+            folderContent.style.paddingLeft = '1rem';
+            folderContent.style.borderLeft = '2px solid var(--accent-color)';
+            folderContent.style.marginTop = '0.5rem';
+            listContainer.appendChild(folderContent);
+            
+            // Toggle functionality
+            folderBtn.addEventListener('click', () => {
+                const isHidden = folderContent.style.display === 'none';
+                folderContent.style.display = isHidden ? 'flex' : 'none';
+                folderBtn.querySelector('span:last-child').textContent = isHidden ? '▲' : '▼';
+            });
+            
+            // Exams in this folder
+            folderExams.forEach(exam => {
+                const btn = document.createElement('button');
+                btn.className = 'btn secondary-btn';
+                btn.style.textAlign = 'left';
+                btn.style.padding = '1rem';
+                btn.innerHTML = `<strong>${exam.titulo}</strong><br><span style="opacity:0.7; font-size: 0.85em;">Archivo: ${exam.archivo}</span>`;
+                btn.addEventListener('click', () => loadSpecificExam(exam.archivo));
+                folderContent.appendChild(btn);
+            });
+        }
         
         showScreen('selection');
     } catch (error) {

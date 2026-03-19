@@ -2,31 +2,56 @@
   {
     "id": "quiz-001",
     "titulo": "GEMINI: Selección de Algoritmos y Proceso de Entrenamiento",
-    "archivo": "examen.json"
+    "archivo": "TEMA3/examen.json"
   },
   {
     "id": "quiz-002",
     "titulo": "GEMINI: Sistemes d’Aprenentatge Automàtic",
-    "archivo": "examen2.json"
+    "archivo": "TEMA3/examen2.json"
   },
   {
     "id": "quiz-003",
     "titulo": "CHATGPT: Selección de algoritmos y proceso de aprendizaje automático",
-    "archivo": "examen3.json"
+    "archivo": "TEMA3/examen3.json"
   },
   {
     "id": "quiz-004",
     "titulo": "CHATGPT: Selección de algoritmos y proceso de aprendizaje automático",
-    "archivo": "examen4.json"
+    "archivo": "TEMA3/examen4.json"
   },
   {
     "id": "quiz-005",
     "titulo": "GEMINI: Sistemas de Aprendizaje Automático",
-    "archivo": "tema3.json"
+    "archivo": "TEMA3/examen5.json"
   },
   {
     "id": "quiz-006",
     "titulo": "GEMINI: 20 Preguntas (Opción Única)",
-    "archivo": "examen5.json"
+    "archivo": "TEMA3/examen5.json"
+  },
+  {
+    "id": "quiz-t4-01",
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Básico)",
+    "archivo": "TEMA4/exam1_basico.json"
+  },
+  {
+    "id": "quiz-t4-02",
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Intermedio)",
+    "archivo": "TEMA4/exam2_intermedio.json"
+  },
+  {
+    "id": "quiz-t4-03",
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Avanzado)",
+    "archivo": "TEMA4/exam3_avanzado.json"
+  },
+  {
+    "id": "quiz-t4-04",
+    "titulo": "GEMINI: TEMA 4 - DIFICULTAD DIOS SUPREMO",
+    "archivo": "TEMA4/exam4_dios.json"
+  },
+  {
+    "id": "quiz-t4-05",
+    "titulo": "CHATGPT: TEMA 4",
+    "archivo": "TEMA4/exam5.json"
   }
 ]

@@ -1,0 +1,145 @@
+{
+  "examen": {
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Intermedio)",
+    "descripcion": "Examen con foco en tipos de redes (FNN, CNN, RNN), funciones de pérdida y conceptos de IA Generativa.",
+    "configuracion": {
+      "tiempo_limite_minutos": 12,
+      "puntuacion_minima_aprobado": 75,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "t4_i1",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué indica el Gradient Descent en el contexto de redes neuronales?",
+        "opciones": [
+          { "id": "a", "texto": "El paso inicial para asignar pesos completamente al azar." },
+          { "id": "b", "texto": "Cómo modificar los parámetros para reducir el error tras calcular derivadas parciales." },
+          { "id": "c", "texto": "La reducción de dimensionalidad en imágenes usando pooling." },
+          { "id": "d", "texto": "La manera en que fluye la información en FNN." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "El Gradient Descent calcula derivadas parciales e indica cómo modificar los parámetros para reducir el error."
+      },
+      {
+        "id": "t4_i2",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de las siguientes son variantes del Gradient Descent nombradas en el temario?",
+        "opciones": [
+          { "id": "a", "texto": "Adam" },
+          { "id": "b", "texto": "LeCun" },
+          { "id": "c", "texto": "RMSprop" },
+          { "id": "d", "texto": "He" },
+          { "id": "e", "texto": "Mini-batch" }
+        ],
+        "respuesta_correcta": ["a", "c", "e"],
+        "explicacion": "Variantes incluyen: SGD, Mini-batch, Momentum, RMSprop, Adam, Adagrad. LeCun y He son técnicas de inicialización."
+      },
+      {
+        "id": "t4_i3",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Cuál es la característica principal de las redes tipo FNN (Feedforward)?",
+        "opciones": [
+          { "id": "a", "texto": "Son redes con ciclos de memoria donde el estado oculto se repite." },
+          { "id": "b", "texto": "La información fluye en una sola dirección." },
+          { "id": "c", "texto": "Aplica filtros multiplicados elemento a elemento como un kernel." },
+          { "id": "d", "texto": "Utiliza un encoder y un decoder conectados al revés." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "En FNN, la información fluye en una sola dirección."
+      },
+      {
+        "id": "t4_i4",
+        "tipo": "unica_respuesta",
+        "enunciado": "Durante la etapa de Convolución en una CNN, ¿qué elementos se aplican sobre la imagen para detectar patrones locales?",
+        "opciones": [
+          { "id": "a", "texto": "Capas de pooling (Average/Max)" },
+          { "id": "b", "texto": "Kernels (Filtros)" },
+          { "id": "c", "texto": "Estados ocultos" },
+          { "id": "d", "texto": "Sigmoides" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "La convolución aplica filtros (kernels) sobre la imagen para detectar patrones locales medianto multiplicación y desplazamiento."
+      },
+      {
+        "id": "t4_i5",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué es el 'Pooling' dentro de una CNN?",
+        "opciones": [
+          { "id": "a", "texto": "Un método para reducir la dimensión manteniendo la información importante." },
+          { "id": "b", "texto": "Un cálculo de pérdida (Cross-entropy o MSE)." },
+          { "id": "c", "texto": "El uso del modelo completo de otra red para transfer learning." },
+          { "id": "d", "texto": "La división en mini-batches del set de datos." }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "Pooling reduce la dimensión pero mantiene la información importante. Tipos incluyen Max y Average pooling."
+      },
+      {
+        "id": "t4_i6",
+        "tipo": "unica_respuesta",
+        "enunciado": "En la sección de Autoencoders, se menciona que consisten en dos partes. ¿Cuáles son?",
+        "opciones": [
+          { "id": "a", "texto": "LSTM y GRU" },
+          { "id": "b", "texto": "Capa de Activación y Capa Convolucional" },
+          { "id": "c", "texto": "Encoder y Decoder" },
+          { "id": "d", "texto": "Forward prop y Backprop" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Un Autoencoder tiene un Encoder (para reducir dimensión) y un Decoder (para reconstruir)."
+      },
+      {
+        "id": "t4_i7",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Indica cuáles son aplicaciones clave de un Autoencoder indicadas en el temario:",
+        "opciones": [
+          { "id": "a", "texto": "Clasificación de texto en series temporales" },
+          { "id": "b", "texto": "Detección de anomalías" },
+          { "id": "c", "texto": "Generación de video secuencial bidireccional" },
+          { "id": "d", "texto": "Reducción de dimensionalidad" }
+        ],
+        "respuesta_correcta": ["b", "d"],
+        "explicacion": "Las aplicaciones mencionadas para autoencoders son reducción de dimensionalidad y detección de anomalías (basado en el error de reconstrucción)."
+      },
+      {
+        "id": "t4_i8",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué tipo de aprendizaje permite a la IA Generativa llevar a cabo tareas para las cuales no fue específicamente re-entrenada?",
+        "opciones": [
+          { "id": "a", "texto": "Supervised transfer" },
+          { "id": "b", "texto": "Zero-shot learning" },
+          { "id": "c", "texto": "Backpropagation for text" },
+          { "id": "d", "texto": "Sigmoid adaptation" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "La IA Generativa usa Zero-shot learning, a diferencia de la tradicional que no generaliza nativamente sin datos pre-procesados de la tarea."
+      },
+      {
+        "id": "t4_i9",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Dentro de los LLM, además de conversar, ¿qué otras funciones se mencionan explícitamente?",
+        "opciones": [
+          { "id": "a", "texto": "Resumen" },
+          { "id": "b", "texto": "Suma ponderada con bias" },
+          { "id": "c", "texto": "Clasificación" },
+          { "id": "d", "texto": "Predicción meteorológica estática" }
+        ],
+        "respuesta_correcta": ["a", "c"],
+        "explicacion": "Los LLM permiten conversación, resumen y clasificación adaptando su tono y manteniendo el contexto."
+      },
+      {
+        "id": "t4_i10",
+        "tipo": "unica_respuesta",
+        "enunciado": "Según el temario, ¿qué es 'Chain of Thought'?",
+        "opciones": [
+          { "id": "a", "texto": "Una arquitectura de red similar a CNN para texto." },
+          { "id": "b", "texto": "Una técnica avanzada de prompt engineering que pide pasos de razonamiento al LLM." },
+          { "id": "c", "texto": "Una manera de encadenar errores MAE y MSE." },
+          { "id": "d", "texto": "Un bloqueo (anomalía) en el decoder del Autoencoder." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Chain of Thought implica pedirle al LLM que desglose sus pasos de razonamiento de forma lógica (Técnicas avanzadas de Prompt)."
+      }
+    ]
+  }
+}

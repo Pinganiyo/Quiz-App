@@ -1,0 +1,146 @@
+{
+  "examen": {
+    "titulo": "GEMINI: TEMA 4 - DIFICULTAD DIOS SUPREMO",
+    "descripcion": "El veredicto final. Examen de alto rigor académico donde cualquier simple diferencia de terminología puede hacerte fracasar todo el test. Modo Supervivencia activado.",
+    "configuracion": {
+      "tiempo_limite_minutos": 8,
+      "puntuacion_minima_aprobado": 90,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "t4_d1",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Considera la estructura detallada de las Capas Ocultas explicada al principio del README. Selecciona EXACTAMENTE las premisas correctas.",
+        "opciones": [
+          { "id": "a", "texto": "Son aquellas que procesan la información y no tienen un número fijo normativo impuesto sobre su cantidad o volumen de neuronas." },
+          { "id": "b", "texto": "Su arquitectura (cantidad, orden y topología) definen el subtipo de la red (tales como FNN, CNN o RNN)." },
+          { "id": "c", "texto": "Son la base primordial exclusiva para ajustar las iteraciones durante Forward Propagation ignorando bias si están en RNN." },
+          { "id": "d", "texto": "Dependiendo exclusivamente del caso de Clasificación Multiclase o Binario, restringen el tamaño de su output oculto a N número de clases." }
+        ],
+        "respuesta_correcta": ["a", "b"],
+        "explicacion": "El temario dice que procesan información, no tienen número fijo de capas/neuronas, y definen el tipo de red (FNN/CNN/RNN). La restricción del output numérico se aplica explícitamente a la CAPA DE SALIDA, NO la oculta."
+      },
+      {
+        "id": "t4_d2",
+        "tipo": "unica_respuesta",
+        "enunciado": "Según la tabla diferencial provista sobre IA tradicional e IA Generativa, si tenemos un sistema evaluando su desempeño en una regresión logística que sólo opera bajo un dominio de control sin poder escalar a múltiples casos funcionales... ¿qué premisa lo diferencia frente a su contraparte?",
+        "opciones": [
+          { "id": "a", "texto": "La IA Tradicional solo admite datos numéricos; la Generativa usa datos numéricos pre-transformados por Softmax." },
+          { "id": "b", "texto": "La IA Tradicional funciona bajo un modelo por aplicación concreta, mientras la generativa usa modelos preentrenados genéricos (Zero-shot)." },
+          { "id": "c", "texto": "La IA Tradicional mantiene contexto mientras la IA generativa usa el Encoder-Decoder sin memoria contextual." },
+          { "id": "d", "texto": "Ambas resuelven problemas vía lenguaje natural asumiendo backpropagation." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Tabla: IA Tradicional tiene 'Modelo por aplicación' y 'No generaliza'. IA Generativa tiene 'Modelos preentrenados' y 'Zero-shot learning'."
+      },
+      {
+        "id": "t4_d3",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Referente de forma estricta a la inicialización de una red antes del ciclo de Backpropagation, se proponen diversas dinámicas. Señala TODAS las correctas apoyadas por el temario literal.",
+        "opciones": [
+          { "id": "a", "texto": "Implementar Xavier" },
+          { "id": "b", "texto": "Generar valores enteramente en 0 para evadir 'neuronas muertas'" },
+          { "id": "c", "texto": "Implementar el tipo de optimizador RMSprop antes de crear la matriz de pesos" },
+          { "id": "d", "texto": "Emplear inicialización Aleatoria pero estrictamente de valores pequeños" },
+          { "id": "e", "texto": "Reutilizar o heredar desde el peso de un modelo previo ya entrenado" }
+        ],
+        "respuesta_correcta": ["a", "d", "e"],
+        "explicacion": "Textualmente se expone: Inicialización [Aleatoria con valores pequeños], [A partir de un modelo preentrenado], [Técnicas: Xavier, He, LeCun]. RMSprop es una técnica del Gradient Descent."
+      },
+      {
+        "id": "t4_d4",
+        "tipo": "unica_respuesta",
+        "enunciado": "Una red reporta en su capa oculta que los gradientes computados crecen caóticamente hasta llevar los números métricos a Infinity o NaN. ¿Qué problema está sucediendo sistemáticamente?",
+        "opciones": [
+          { "id": "a", "texto": "Underfitting derivado de Dropout extremo." },
+          { "id": "b", "texto": "Sección del Autoencoder fallando produciendo anomalía de reconstrucción." },
+          { "id": "c", "texto": "Vanishing Gradient provocado por capas ocultas muy profundas." },
+          { "id": "d", "texto": "Exploding Gradient que causa inestabilidad funcional." }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "Exploding gradient = 'Gradientes muy grandes -> inestabilidad'."
+      },
+      {
+        "id": "t4_d5",
+        "tipo": "seleccion_multiple",
+        "enunciado": "En la etapa interna del proceso global de CNN, el temario narra el sub-procedimiento estricto de la etapa 'Convolución'. Elige las que componen los pasos listados para esto:",
+        "opciones": [
+          { "id": "a", "texto": "Desplazamiento del respectivo filtro." },
+          { "id": "b", "texto": "Multiplicación escalar o elemento a elemento." },
+          { "id": "c", "texto": "Extracción y mantenimiento del Average y Max pooling dimensional." },
+          { "id": "d", "texto": "Suma resultante de los elementos." }
+        ],
+        "respuesta_correcta": ["a", "b", "d"],
+        "explicacion": "El Proceso de CNN->Convolución expuesto estricto es: 1. Multiplicación elemento a elemento, 2. Suma de resultados, 3. Desplazamiento del filtro. (El Pooling es otra sección totalmente distinta de las CNN)."
+      },
+      {
+        "id": "t4_d6",
+        "tipo": "unica_respuesta",
+        "enunciado": "Respecto a las redes que tienen 'memoria', la familia indicada asimila características que le definen la noción secuencial del pasado. ¿Qué atributo técnico específico detalla el temario que sirve como depósito temporal de su paso contextual?",
+        "opciones": [
+          { "id": "a", "texto": "Kernels / Mapas de Características." },
+          { "id": "b", "texto": "Adam Momentum." },
+          { "id": "c", "texto": "El Estado Oculto (Hidden State)." },
+          { "id": "d", "texto": "Zero-shot memory transfer." }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Seccion RNN: 'Tienen memoria (estado oculto)'. 'Cada paso depende del anterior'."
+      },
+      {
+        "id": "t4_d7",
+        "tipo": "unica_respuesta",
+        "enunciado": "La técnica llamada 'transfer learning' (aprendizaje por transferencia) está altamente relacionada y su uso es muy frecuente en ¿qué variante base de redes?",
+        "opciones": [
+          { "id": "a", "texto": "En Redes Fully Connected convencionales estáticas (FNN)." },
+          { "id": "b", "texto": "Particularmente en problemas que atacan Autoencoders donde detectan anomalías." },
+          { "id": "c", "texto": "En las CNNs (Convolutional Neural Networks) dado su alto coste computacional natural en la visión/imágenes." },
+          { "id": "d", "texto": "En Prompt Engineering donde se heredan los Roles asignados." }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Bajo las Características de CNN el temario lista estrictamente: Alto coste computacional y 'Frecuente uso de transfer learning'."
+      },
+      {
+        "id": "t4_d8",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Si el cliente final nos pide resolver problemas usando 'Prompt Engineering', basándonos de forma hipercrítica en 'Técnicas Avanzadas', señala solo las que corresponden a dicha sección:",
+        "opciones": [
+          { "id": "a", "texto": "Usar lenguaje imperativo (comandar)" },
+          { "id": "b", "texto": "Entrenar los pesos del LLM según Feedback manual" },
+          { "id": "c", "texto": "Desplegar el modelo mediante Chain of Thought" },
+          { "id": "d", "texto": "Establecer la respuesta usando la opción 'Especificar formato de salida'" },
+          { "id": "e", "texto": "Especificar restricciones controlando los parámetros de creatividad" }
+        ],
+        "respuesta_correcta": ["a", "c", "e"],
+        "explicacion": "En 7. Técnicas avanzadas dice: Asignar un rol, Chain of Thought, Controlar parámetros, Pedir fuentes, Usar lenguaje imperativo. 'Especificar formato de salida' es de 'Buenas prácticas' (no técnica avanzada). Entrenar pesos no corresponde a prompt engineering."
+      },
+      {
+        "id": "t4_d9",
+        "tipo": "unica_respuesta",
+        "enunciado": "De las funciones puramente matemáticas en la salida para la 'Activación', si te enfrentas a un análisis probatorio multiclásico en donde los outputs son excluyentes y mutuamente sumados al final. ¿Qué función de la neurona de salida encaja?",
+        "opciones": [
+          { "id": "a", "texto": "Sigmoide múltiple." },
+          { "id": "b", "texto": "ReLU Bidireccional." },
+          { "id": "c", "texto": "Softmax, por generalización de salida ponderada base 1." },
+          { "id": "d", "texto": "tanh por sus restricciones entre -1 y 1." }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Softmax -> output: probabilidades que suman 1, usado como generalización de sigmoide y primordial en multiclase."
+      },
+      {
+        "id": "t4_d10",
+        "tipo": "unica_respuesta",
+        "enunciado": "Se afirma que 'las redes neuronales aprenden ajustando pesos', ¿cuál de los subsiguientes NO pertenece al listado de las variables de Gradient Descent?",
+        "opciones": [
+          { "id": "a", "texto": "RMSprop" },
+          { "id": "b", "texto": "Adam" },
+          { "id": "c", "texto": "Adagrad" },
+          { "id": "d", "texto": "LeCun" }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "LeCun es una técnica de inicialización, no una variante del Gradient Descent."
+      }
+    ]
+  }
+}

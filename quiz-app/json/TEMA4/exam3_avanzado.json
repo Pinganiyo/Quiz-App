@@ -1,0 +1,146 @@
+{
+  "examen": {
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Avanzado)",
+    "descripcion": "Un nivel superior exigiendo comprensión detallada sobre gradientes, pérdida, e inicialización de parámetros.",
+    "configuracion": {
+      "tiempo_limite_minutos": 15,
+      "puntuacion_minima_aprobado": 80,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "t4_a1",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Durante la etapa de Inicialización de una red neuronal, ¿qué técnicas menciona el temario?",
+        "opciones": [
+          { "id": "a", "texto": "Aleatoria con valores pequeños" },
+          { "id": "b", "texto": "A partir de un modelo preentrenado" },
+          { "id": "c", "texto": "Xavier, He, LeCun" },
+          { "id": "d", "texto": "Ajuste por función sigmoide estática" },
+          { "id": "e", "texto": "Padding zero-shot" }
+        ],
+        "respuesta_correcta": ["a", "b", "c"],
+        "explicacion": "El temario lista claramente inicialización: aleatoria con valores pequeños, a partir de modelo preentrenado, y técnicas Xavier, He, LeCun."
+      },
+      {
+        "id": "t4_a2",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué comportamiento define la función de activación ReLU?",
+        "opciones": [
+          { "id": "a", "texto": "Es 0 si el input es negativo o x si es mayor o igual a cero." },
+          { "id": "b", "texto": "Produce un output siempre acotado entre -1 y 1." },
+          { "id": "c", "texto": "Asegura que la suma de sus outputs de todas las neuronas sea igual a 1." },
+          { "id": "d", "texto": "Activa neuronas aleatoriamente descartando inputs débiles." }
+        ],
+        "respuesta_correcta": "a",
+        "explicacion": "ReLU es 0 si x < 0, y es igual a x si x >= 0."
+      },
+      {
+        "id": "t4_a3",
+        "tipo": "unica_respuesta",
+        "enunciado": "En la capa de salida para problemas de 'Clasificación multiclase', ¿qué configuración neuronal sería apropiada según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "1 neurona con activación ReLU" },
+          { "id": "b", "texto": "1 neurona que emite la probabilidad absoluta" },
+          { "id": "c", "texto": "1 neurona por clase (generalmente usando Softmax)" },
+          { "id": "d", "texto": "Múltiples capas ocultas que deciden las clases" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Clasificación multiclase requiere 1 neurona por clase en su arquitectura de salida."
+      },
+      {
+        "id": "t4_a4",
+        "tipo": "unica_respuesta",
+        "enunciado": "En el contexto de problemas en el entrenamiento, ¿qué sucede cuando ocurre 'Vanishing gradient'?",
+        "opciones": [
+          { "id": "a", "texto": "Los gradientes son demasiado grandes y causan inestabilidad de pesos." },
+          { "id": "b", "texto": "Los gradientes se hacen muy pequeños ocasionando un aprendizaje lento." },
+          { "id": "c", "texto": "La función MAE es incapaz de calcular derivadas cruzadas." },
+          { "id": "d", "texto": "Las neuronas procesan inputs iguales pero con diferentes bias." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Vanishing gradient significa gradientes muy pequeños lo cual ralentiza severamente el aprendizaje."
+      },
+      {
+        "id": "t4_a5",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de las siguientes se enumeran como funciones de pérdida en el cálculo del error (error calculation)?",
+        "opciones": [
+          { "id": "a", "texto": "MAE" },
+          { "id": "b", "texto": "Log-loss" },
+          { "id": "c", "texto": "Cross-entropy" },
+          { "id": "d", "texto": "Adam" },
+          { "id": "e", "texto": "tanh" }
+        ],
+        "respuesta_correcta": ["a", "b", "c"],
+        "explicacion": "El temario cita: MAE, MSE, Cross-entropy y Log-loss. Adam es un optimizador de gradiente y tanh es función de activación."
+      },
+      {
+        "id": "t4_a6",
+        "tipo": "unica_respuesta",
+        "enunciado": "El problema de redes neuronales que 'memorizan los datos' en lugar de detectar patrones subyacentes...",
+        "opciones": [
+          { "id": "a", "texto": "Se conoce como Underfitting y se soluciona dando más capas." },
+          { "id": "b", "texto": "Se soluciona incrementando el tamaño del Pooling kernel." },
+          { "id": "c", "texto": "Se llama Overfitting y una solución es utilizar técnicas de dropout." },
+          { "id": "d", "texto": "No es un problema severo si se usa Adagrad." }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "El overfitting ocurre por hiper-ajuste, y se solventa reduciendo complejidad o aplicando dropout."
+      },
+      {
+        "id": "t4_a7",
+        "tipo": "seleccion_multiple",
+        "enunciado": "Dentro de las características propias de los modelos LSTM, GRU y Bidirectional RNN, ¿qué las agrupa?",
+        "opciones": [
+          { "id": "a", "texto": "Pertenecen a la familia de las RNN." },
+          { "id": "b", "texto": "Suelen usarse primordialmente para análisis de vídeo estructurado por capas convolucionales aisladas." },
+          { "id": "c", "texto": "Poseen 'estado oculto' porque integran elementos de memoria a través del tiempo/secuencia." },
+          { "id": "d", "texto": "Su función original es la compresión de anomalías usando Zero-shot learning." }
+        ],
+        "respuesta_correcta": ["a", "c"],
+        "explicacion": "Pertenecen a las Recurrent Neural Networks y las RNN se caracterizan por procesar secuencialmente el texto/tiempo, incluyendo 'memoria' a través del estado oculto."
+      },
+      {
+        "id": "t4_a8",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué analogía principal determina la anomalía en un flujo de un Autoencoder?",
+        "opciones": [
+          { "id": "a", "texto": "El coste y uso temporal del encoder para decodificar texto." },
+          { "id": "b", "texto": "Un alto error de reconstrucción indica anomalía." },
+          { "id": "c", "texto": "La incapacidad de generalizar imágenes vía Transfer Learning." },
+          { "id": "d", "texto": "Falla al compilar el Backpropagation de la capa Silver." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "En el Autoencoder, error de reconstrucción alto = anomalía."
+      },
+      {
+        "id": "t4_a9",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de las técnicas avanzadas enumeradas sirven a estrategias de ingeniería de prompts?",
+        "opciones": [
+          { "id": "a", "texto": "Pedir fuentes documentales en la misma pregunta o instrucción." },
+          { "id": "b", "texto": "Asignar un rol específico al modelo para adaptar el enfoque o estilo." },
+          { "id": "c", "texto": "Controlar parámetros técnicos de temperatura y creatividad." },
+          { "id": "d", "texto": "Reescribir la capa de entrada del Autoencoder." }
+        ],
+        "respuesta_correcta": ["a", "b", "c"],
+        "explicacion": "Asignar rol, chain of thought, controlar parámetros de creatividad y pedir fuentes son parte de las buenas tácticas listadas para Prompt Engineering."
+      },
+      {
+        "id": "t4_a10",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué es conceptualmente el paso donde la estructura de una red neuronal usa la suma(input × peso) + bias?",
+        "opciones": [
+          { "id": "a", "texto": "La función de activación y output puro de las Convolutional NN." },
+          { "id": "b", "texto": "La reducción del gradiente de pérdida por ADAM." },
+          { "id": "c", "texto": "El cálculo afín interno de la neurona previo a la activación." },
+          { "id": "d", "texto": "Fase de entrenamiento Zero-Shot final." }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Se listan los pasos de la neurona: input, cuenta pre-activación (suma de ponderados + bias) seguido luego por la función de activación."
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "examen": {
+    "titulo": "GEMINI: TEMA 4 - Redes Neuronales (Básico)",
+    "descripcion": "Examen con conceptos introductorios sobre redes neuronales, sus capas y componentes.",
+    "configuracion": {
+      "tiempo_limite_minutos": 10,
+      "puntuacion_minima_aprobado": 70,
+      "orden_aleatorio": true,
+      "mostrar_retroalimentacion": true
+    },
+    "preguntas": [
+      {
+        "id": "t4_b1",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué es la capa de entrada (input layer) en una red neuronal?",
+        "opciones": [
+          { "id": "a", "texto": "La que realiza todos los cálculos matemáticos." },
+          { "id": "b", "texto": "La que recibe los datos y los distribuye, sin cálculos." },
+          { "id": "c", "texto": "La que aplica la función Softmax." },
+          { "id": "d", "texto": "La que ajusta el bias y el peso de la red." }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "La capa de entrada recibe los datos. No realiza cálculos, solo distribuye la información donde cada neurona representa una característica."
+      },
+      {
+        "id": "t4_b2",
+        "tipo": "unica_respuesta",
+        "enunciado": "En clasificación binaria, ¿cuántas neuronas suele tener la capa de salida según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "2 neuronas" },
+          { "id": "b", "texto": "Múltiples neuronas" },
+          { "id": "c", "texto": "1 neurona" },
+          { "id": "d", "texto": "Depende de las capas ocultas" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "El temario especifica que para clasificación binaria la capa de salida tiene 1 neurona (típicamente entre 0 y 1)."
+      },
+      {
+        "id": "t4_b3",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué permite la 'función de activación' dentro de una neurona?",
+        "opciones": [
+          { "id": "a", "texto": "Reducir la dimensionalidad de las imágenes" },
+          { "id": "b", "texto": "Aplicar una transformación no lineal para captar relaciones complejas" },
+          { "id": "c", "texto": "Calcular derivadas parciales" },
+          { "id": "d", "texto": "Inicializar los pesos de la red" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "La función de activación aplica una transformación no lineal que permite a la red captar relaciones más complejas en los datos."
+      },
+      {
+        "id": "t4_b4",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Cuáles de las siguientes son funciones de activación válidas mencionadas en el texto?",
+        "opciones": [
+          { "id": "a", "texto": "Sigmoide" },
+          { "id": "b", "texto": "ReLU" },
+          { "id": "c", "texto": "Softmax" },
+          { "id": "d", "texto": "Xavier" }
+        ],
+        "respuesta_correcta": ["a", "b", "c"],
+        "explicacion": "Sigmoide, Softmax, tanh y ReLU son funciones de activación. Xavier es una técnica de inicialización de pesos."
+      },
+      {
+        "id": "t4_b5",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué indica el 'Backpropagation'?",
+        "opciones": [
+          { "id": "a", "texto": "El paso inicial donde los datos atraviesan la red" },
+          { "id": "b", "texto": "La técnica para reducir las neuronas ocultas" },
+          { "id": "c", "texto": "Ajuste de pesos y bias en función del error hacia atrás" },
+          { "id": "d", "texto": "El uso de la función ReLU en la capa final" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Backpropagation ajusta los pesos y el bias en función del error usando el gradiente de la función de pérdida."
+      },
+      {
+        "id": "t4_b6",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué nombre recibe el problema cuando el modelo memoriza los datos sin generalizar?",
+        "opciones": [
+          { "id": "a", "texto": "Underfitting" },
+          { "id": "b", "texto": "Exploding gradient" },
+          { "id": "c", "texto": "Vanishing gradient" },
+          { "id": "d", "texto": "Overfitting" }
+        ],
+        "respuesta_correcta": "d",
+        "explicacion": "Overfitting ocurre cuando el modelo memoriza los datos."
+      },
+      {
+        "id": "t4_b7",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Para qué tipo de datos fueron diseñadas las Redes Neuronales Recurrentes (RNN)?",
+        "opciones": [
+          { "id": "a", "texto": "Imágenes y Video" },
+          { "id": "b", "texto": "Datos secuenciales (texto y series temporales)" },
+          { "id": "c", "texto": "Exclusivamente para datos tabulares" },
+          { "id": "d", "texto": "Generación de código fuente estático" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "Las RNN están diseñadas para datos secuenciales como texto y series temporales al tener memoria (estado oculto)."
+      },
+      {
+        "id": "t4_b8",
+        "tipo": "seleccion_multiple",
+        "enunciado": "¿Qué características diferencian a la IA Generativa de la IA tradicional según el temario?",
+        "opciones": [
+          { "id": "a", "texto": "Entrenada para tareas específicas" },
+          { "id": "b", "texto": "Interacción mediante lenguaje natural" },
+          { "id": "c", "texto": "Uso de Modelos preentrenados" },
+          { "id": "d", "texto": "No es capaz de generalizar" }
+        ],
+        "respuesta_correcta": ["b", "c"],
+        "explicacion": "La IA tradicional es entrenada para una tarea específica y no generaliza. La IA generativa usa modelos preentrenados y aplica interacción en lenguaje natural."
+      },
+      {
+        "id": "t4_b9",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué representa LLM en el contexto de IA Generativa?",
+        "opciones": [
+          { "id": "a", "texto": "Low Level Models" },
+          { "id": "b", "texto": "Large Language Models" },
+          { "id": "c", "texto": "Linear Learning Mechanism" },
+          { "id": "d", "texto": "Large Logic Mathematics" }
+        ],
+        "respuesta_correcta": "b",
+        "explicacion": "LLM significa Large Language Models (Modelos que procesan texto y generan respuestas)."
+      },
+      {
+        "id": "t4_b10",
+        "tipo": "unica_respuesta",
+        "enunciado": "¿Qué es el Prompt Engineering?",
+        "opciones": [
+          { "id": "a", "texto": "El diseño lógico del chip de procesamiento" },
+          { "id": "b", "texto": "El cálculo del error de backpropagation en Python" },
+          { "id": "c", "texto": "El diseño de instrucciones/prompts para obtener mejores resultados de un LLM" },
+          { "id": "d", "texto": "Entrenamiento de un modelo desde cero" }
+        ],
+        "respuesta_correcta": "c",
+        "explicacion": "Prompt Engineering es el diseño de prompts para obtener mejores resultados de un LLM."
+      }
+    ]
+  }
+}
