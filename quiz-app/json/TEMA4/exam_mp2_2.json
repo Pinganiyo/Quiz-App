@@ -1,0 +1,405 @@
+{
+    "examen": {
+        "id": "quiz-002",
+        "titulo": "Examen MP2 - Sistemas de Aprendizaje Automático",
+        "descripcion": "Evaluación tipo test sobre redes neuronales, entrenamiento, arquitecturas e IA generativa.",
+        "configuracion": {
+            "tiempo_limite_minutos": 30,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es una red neuronal?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Un algoritmo de ordenación"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Un modelo que imita el cerebro humano"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Un lenguaje de programación"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Un sistema operativo"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las redes neuronales imitan el funcionamiento del cerebro mediante neuronas organizadas en capas."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace la capa de entrada?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Procesa datos complejos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Recibe y distribuye los datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcula errores"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Actualiza pesos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "La capa de entrada solo recibe los datos y los distribuye al resto de la red."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué ocurre en las capas ocultas?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Se almacenan datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Se procesa la información"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Se calcula el error final"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Se eliminan datos"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las capas ocultas son las encargadas de procesar la información."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué se calcula en una neurona antes de la activación?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Media de inputs"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Suma ponderada más bias"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Máximo valor"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Número de capas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Se calcula la suma de inputs multiplicados por sus pesos más el bias."
+            },
+            {
+                "id": 5,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Para qué sirve la función de activación?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Reducir datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Introducir no linealidad"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Eliminar bias"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Aumentar capas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Permite que la red capture relaciones complejas no lineales."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué función de activación se usa comúnmente en capas ocultas?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Softmax"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "ReLU"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Sigmoide"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Lineal"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "ReLU es muy utilizada por su simplicidad y eficiencia."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué sucede en el forward propagation?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Se ajustan pesos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Se calcula la salida"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Se elimina error"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Se crean neuronas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Los datos pasan por la red hasta generar una predicción."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué mide la función de pérdida?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Velocidad"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Error del modelo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Capacidad"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Número de neuronas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Mide la diferencia entre la predicción y el valor real."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el backpropagation?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Calcula inputs"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Ajusta pesos según el error"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Reduce datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Añade capas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Ajusta los parámetros usando el gradiente del error."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema implica gradientes muy pequeños?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Exploding gradient"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Vanishing gradient"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Overfitting"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Underfitting"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Hace que el aprendizaje sea muy lento."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué red se usa para imágenes?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "RNN"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "CNN"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "FNN"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "MLP"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las CNN están diseñadas para detectar patrones en imágenes."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace el pooling?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Aumentar tamaño"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reducir dimensión"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Calcular error"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Activar neuronas"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Reduce el tamaño manteniendo la información importante."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué red procesa secuencias?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "CNN"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "RNN"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "FNN"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Autoencoder"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las RNN manejan datos como texto o series temporales."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué caracteriza a un autoencoder?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Clasifica datos"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Reduce y reconstruye datos"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "Aumenta datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Elimina ruido totalmente"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Comprime los datos y luego intenta reconstruirlos."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué hace la IA generativa?",
+                "imagen_url": null,
+                "opciones": [
+                    {
+                        "id": "a",
+                        "texto": "Solo clasifica"
+                    },
+                    {
+                        "id": "b",
+                        "texto": "Genera contenido nuevo"
+                    },
+                    {
+                        "id": "c",
+                        "texto": "No usa datos"
+                    },
+                    {
+                        "id": "d",
+                        "texto": "Solo analiza números"
+                    }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Puede generar texto, imágenes, código, etc."
+            }
+        ]
+    }
+}

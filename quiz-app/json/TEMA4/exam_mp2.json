@@ -1,0 +1,275 @@
+{
+    "examen": {
+        "id": "quiz-mp2-01",
+        "titulo": "MP2: Sistemas de aprendizaje automático",
+        "descripcion": "Evaluación basada en redes neuronales, entrenamiento, arquitecturas e IA generativa.",
+        "configuracion": {
+            "tiempo_limite_minutos": 30,
+            "puntuacion_minima_aprobado": 70,
+            "mostrar_retroalimentacion": true,
+            "orden_aleatorio": true
+        },
+        "preguntas": [
+            {
+                "id": 1,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es una red neuronal en el contexto del aprendizaje automático?",
+                "opciones": [
+                    { "id": "a", "texto": "Un algoritmo exclusivo para búsqueda de datos" },
+                    { "id": "b", "texto": "Un modelo que imita el funcionamiento del cerebro humano" },
+                    { "id": "c", "texto": "Una base de datos no relacional" },
+                    { "id": "d", "texto": "Un lenguaje de programación" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Una red neuronal es un modelo de aprendizaje automático que imita el funcionamiento del cerebro humano."
+            },
+            {
+                "id": 2,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué función principal tiene la capa de entrada en una red neuronal?",
+                "opciones": [
+                    { "id": "a", "texto": "Realizar los cálculos principales" },
+                    { "id": "b", "texto": "Proporcionar el resultado final" },
+                    { "id": "c", "texto": "Recibir los datos y distribuir la información sin realizar cálculos" },
+                    { "id": "d", "texto": "Ajustar los pesos y el sesgo" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La capa de entrada recibe los datos y los distribuye; no realiza cálculos."
+            },
+            {
+                "id": 3,
+                "tipo": "opcion_unica",
+                "enunciado": "En un problema de clasificación multiclase, ¿cuántas neuronas suele tener la capa de salida?",
+                "opciones": [
+                    { "id": "a", "texto": "Una sola neurona" },
+                    { "id": "b", "texto": "Una neurona por cada clase" },
+                    { "id": "c", "texto": "El mismo número que la capa de entrada" },
+                    { "id": "d", "texto": "Depende de las capas ocultas" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Para clasificación multiclase, la capa de salida tiene 1 neurona por clase."
+            },
+            {
+                "id": 4,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué operación se realiza principalmente en una neurona antes de aplicar la función de activación?",
+                "opciones": [
+                    { "id": "a", "texto": "Cálculo de la derivada" },
+                    { "id": "b", "texto": "División por el sesgo" },
+                    { "id": "c", "texto": "Suma ponderada más sesgo (bias)" },
+                    { "id": "d", "texto": "Normalización de salida" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Se calcula la suma de (input × peso) + bias antes de la función de activación."
+            },
+            {
+                "id": 5,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cuál de las siguientes funciones de activación devuelve un output entre 0 y 1 y se usa en clasificación binaria?",
+                "opciones": [
+                    { "id": "a", "texto": "Sigmoide" },
+                    { "id": "b", "texto": "Softmax" },
+                    { "id": "c", "texto": "tanh" },
+                    { "id": "d", "texto": "ReLU" }
+                ],
+                "respuesta_correcta": "a",
+                "explicacion": "La función sigmoide devuelve valores entre 0 y 1, ideal para clasificación binaria."
+            },
+            {
+                "id": 6,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué proceso ajusta los pesos y el bias en función del error durante el entrenamiento?",
+                "opciones": [
+                    { "id": "a", "texto": "Forward propagation" },
+                    { "id": "b", "texto": "Inicialización" },
+                    { "id": "c", "texto": "Backpropagation" },
+                    { "id": "d", "texto": "Pooling" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El backpropagation utiliza el gradiente de la función de pérdida para ajustar pesos y bias."
+            },
+            {
+                "id": 7,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué problema ocurre en el entrenamiento cuando el modelo memoriza los datos en lugar de generalizar?",
+                "opciones": [
+                    { "id": "a", "texto": "Vanishing gradient" },
+                    { "id": "b", "texto": "Exploding gradient" },
+                    { "id": "c", "texto": "Underfitting" },
+                    { "id": "d", "texto": "Overfitting" }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "El overfitting se produce cuando el modelo memoriza los datos de entrenamiento; se soluciona con técnicas como dropout."
+            },
+            {
+                "id": 8,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué arquitectura de red neuronal es la más adecuada para el procesamiento de imágenes?",
+                "opciones": [
+                    { "id": "a", "texto": "Feedforward Neural Network (FNN)" },
+                    { "id": "b", "texto": "Convolutional Neural Network (CNN)" },
+                    { "id": "c", "texto": "Recurrent Neural Network (RNN)" },
+                    { "id": "d", "texto": "Generative Adversarial Network (GAN)" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las CNN están diseñadas para datos con estructura espacial, como imágenes o vídeos, utilizando convolución y pooling."
+            },
+            {
+                "id": 9,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué característica distingue a las Redes Neuronales Recurrentes (RNN)?",
+                "opciones": [
+                    { "id": "a", "texto": "Son exclusivas para imágenes" },
+                    { "id": "b", "texto": "La información fluye en una sola dirección" },
+                    { "id": "c", "texto": "Tienen memoria (estado oculto) para datos secuenciales" },
+                    { "id": "d", "texto": "Solo se utilizan para reducción de dimensionalidad" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Las RNN tienen memoria y cada paso depende del anterior, lo que las hace ideales para texto o series temporales."
+            },
+            {
+                "id": 10,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cómo detectan anomalías los Autoencoders?",
+                "opciones": [
+                    { "id": "a", "texto": "Mediante capas convolucionales profundas" },
+                    { "id": "b", "texto": "Comparando pesos iniciales y finales" },
+                    { "id": "c", "texto": "Buscando si el error de reconstrucción es alto" },
+                    { "id": "d", "texto": "Analizando los gradientes en el backpropagation" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La idea clave en Autoencoders es que un error de reconstrucción alto indica una posible anomalía."
+            },
+            {
+                "id": 11,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué distingue a la IA generativa de la IA tradicional?",
+                "opciones": [
+                    { "id": "a", "texto": "Es entrenada para una tarea específica en lugar de datos generales" },
+                    { "id": "b", "texto": "No es capaz de generar código o música" },
+                    { "id": "c", "texto": "Está entrenada con datos generales y permite zero-shot learning" },
+                    { "id": "d", "texto": "Tiene interacción limitada a comandos fijos" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "A diferencia de la tradicional, la IA generativa se entrena con datos generales, permite zero-shot learning y la interacción es natural."
+            },
+            {
+                "id": 12,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué es el 'Prompt Engineering'?",
+                "opciones": [
+                    { "id": "a", "texto": "El diseño de hardware para IA" },
+                    { "id": "b", "texto": "El diseño de prompts para obtener mejores resultados de un LLM" },
+                    { "id": "c", "texto": "Una técnica para inicializar pesos de redes neuronales" },
+                    { "id": "d", "texto": "Un método de reducción de dimensionalidad" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Prompt Engineering se define como el diseño de prompts o entradas para obtener las mejores respuestas posibles de un modelo de lenguaje."
+            },
+            {
+                "id": 13,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué técnica de prompt engineering implica mostrar los pasos de razonamiento?",
+                "opciones": [
+                    { "id": "a", "texto": "Zero-shot" },
+                    { "id": "b", "texto": "Chain of Thought" },
+                    { "id": "c", "texto": "Asignar un rol" },
+                    { "id": "d", "texto": "Controlar parámetros" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Chain of Thought es una técnica avanzada donde se pide al modelo que realice pasos de razonamiento intermedios."
+            },
+            {
+                "id": 14,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué función cumple el 'Pooling' en una red CNN?",
+                "opciones": [
+                    { "id": "a", "texto": "Aumenta la dimensión de la imagen" },
+                    { "id": "b", "texto": "Aplica una transformación no lineal a toda la red" },
+                    { "id": "c", "texto": "Reduce la dimensión manteniendo la información importante" },
+                    { "id": "d", "texto": "Evita el problema del 'Vanishing gradient'" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El Pooling (como Max o Average) reduce la dimensión espacial de los datos manteniendo las características más relevantes."
+            },
+            {
+                "id": 15,
+                "tipo": "opcion_unica",
+                "enunciado": "En la función de activación ReLU, ¿cuál es el output si la entrada (x) es negativa?",
+                "opciones": [
+                    { "id": "a", "texto": "x" },
+                    { "id": "b", "texto": "-1" },
+                    { "id": "c", "texto": "0" },
+                    { "id": "d", "texto": "1" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "La función ReLU devuelve 0 si x < 0, y x si x ≥ 0."
+            },
+            {
+                "id": 16,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Qué indican las siglas LLM?",
+                "opciones": [
+                    { "id": "a", "texto": "Low Level Models" },
+                    { "id": "b", "texto": "Large Language Models" },
+                    { "id": "c", "texto": "Linear Learning Machines" },
+                    { "id": "d", "texto": "Logical Language Machines" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "LLM significa Large Language Models, modelos que procesan texto y generan respuestas."
+            },
+            {
+                "id": 17,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Cómo indica el algoritmo Gradient Descent la manera de modificar los parámetros para reducir el error?",
+                "opciones": [
+                    { "id": "a", "texto": "Multiplicando todos los pesos por cero" },
+                    { "id": "b", "texto": "Eliminando neuronas de manera aleatoria" },
+                    { "id": "c", "texto": "A través del cálculo de derivadas parciales de los parámetros" },
+                    { "id": "d", "texto": "Aplicando un filtro convolucional" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "Gradient descent calcula derivadas parciales de los parámetros para minimizar el error."
+            },
+            {
+                "id": 18,
+                "tipo": "opcion_unica",
+                "enunciado": "Durante el entrenamiento, si los gradientes son muy grandes y causan inestabilidad, ¿cómo se llama a este problema?",
+                "opciones": [
+                    { "id": "a", "texto": "Vanishing gradient" },
+                    { "id": "b", "texto": "Neuronas muertas" },
+                    { "id": "c", "texto": "Overfitting" },
+                    { "id": "d", "texto": "Exploding gradient" }
+                ],
+                "respuesta_correcta": "d",
+                "explicacion": "El exploding gradient ocurre cuando los gradientes son muy grandes, provocando inestabilidad."
+            },
+            {
+                "id": 19,
+                "tipo": "opcion_unica",
+                "enunciado": "¿Para qué tipo de problemas es útil una Feedforward Neural Network (FNN)?",
+                "opciones": [
+                    { "id": "a", "texto": "Únicamente para procesamiento de vídeo" },
+                    { "id": "b", "texto": "Para regresión y clasificación" },
+                    { "id": "c", "texto": "Solo para generación de música" },
+                    { "id": "d", "texto": "Para traducción simultánea en tiempo real sin contexto previo" }
+                ],
+                "respuesta_correcta": "b",
+                "explicacion": "Las redes FNN son muy útiles para tareas de regresión y clasificación general."
+            },
+            {
+                "id": 20,
+                "tipo": "opcion_unica",
+                "enunciado": "En la arquitectura de los Autoencoders, ¿cuál es el propósito del Encoder?",
+                "opciones": [
+                    { "id": "a", "texto": "Reconstruir los datos originales" },
+                    { "id": "b", "texto": "Aumentar artificialmente la cantidad de datos" },
+                    { "id": "c", "texto": "Reducir la dimensión de los datos" },
+                    { "id": "d", "texto": "Generar texto a partir de una imagen" }
+                ],
+                "respuesta_correcta": "c",
+                "explicacion": "El Encoder se encarga de reducir la dimensionalidad de los datos, mientras que el Decoder los reconstruye."
+            }
+        ]
+    }
+}
